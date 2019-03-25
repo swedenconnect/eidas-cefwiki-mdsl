@@ -1,6 +1,6 @@
 MDSL:=./scripts/build-mdsl-entry.sh
 
-all: p np
+update: p np
 
 p:
 	$(MDSL) -t AT -c https://eidas.bmi.gv.at/EidasNode/ConnectorMetadata -o production/AT.xml
