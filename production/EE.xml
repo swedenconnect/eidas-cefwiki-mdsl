@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="EE">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://eidas.ria.ee/EidasNode/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://eidas.ria.ee/EidasNode/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIFVzCCA46gAwIBAgIJAOYSY2dwQfHpMD4GCSqGSIb3DQEBCjAxoA0wCwYJYIZIAWUDBAIBoRow
+GAYJKoZIhvcNAQEIMAsGCWCGSAFlAwQCAaIEAgIBXjCBizELMAkGA1UEBhMCRUUxFDASBgNVBAgM
+C0hhcmp1IENvdW55MRAwDgYDVQQHDAdUYWxsaW5uMS4wLAYDVQQKDCVFc3RvbmlhbiBJbmZvcm1h
+dGlvbiBTeXN0ZW0gQXV0aG9yaXR5MSQwIgYDVQQDDBtlaWRhcy5yaWEuZWUtY29ubmVjdG9yLXNp
+Z24wHhcNMTgwOTI3MTIwMTE5WhcNMjAwOTI2MTIwMTE5WjCBizELMAkGA1UEBhMCRUUxFDASBgNV
+BAgMC0hhcmp1IENvdW55MRAwDgYDVQQHDAdUYWxsaW5uMS4wLAYDVQQKDCVFc3RvbmlhbiBJbmZv
+cm1hdGlvbiBTeXN0ZW0gQXV0aG9yaXR5MSQwIgYDVQQDDBtlaWRhcy5yaWEuZWUtY29ubmVjdG9y
+LXNpZ24wggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQCohHXw0etRjKoMRWZM7RDbcLI4
+F3bnHVkPFX4jyK//v7ZPCNoDrLx5thT/JcFSF+NeVIlgHIZ1rLL0cZGrQ/08mTLcUGt5pjI1RhcM
+QeapsjAxBmywWe7UmgRDXIarEuENzPTn2fqy3NKvaBDFVxSQkFiwPWDtkWOz/Uc7bxU3KDsdFf8L
+rMpTF5V/sy+lBpb5ktz8hG589afp2cRCrxkWmUQt3V7MkjxARiswAR56fDU2a6czRy7UW1reZPm7
+JfCHrikQgjWRXBJL9arloLMf1MsCL8Ozx8mAXdmweR/pzkBozqkB4uyyFD8e6Kqz/vLph+lBxnsw
+kf98xCx8nC1z1du/1QkWJMZEW2ZzOtOQA1DhOrQAGCzp+hgYfHOyJWLrryxl0bXVm8HrhZtsVmBf
+lBN0kx54X4KCfxAbuG3+fxDeE6sLrmATB91JNyJmn1Yi8ffnBzbFtm3032s9Stwp3hQGiVH+UDGk
+nheDpnZpnQBKlxG9p0K3SI6k7L976vsCAwEAAaNaMFgwHQYDVR0OBBYEFLYF5j8ecG4xHQidxtWD
+Ud55FTyqMB8GA1UdIwQYMBaAFLYF5j8ecG4xHQidxtWDUd55FTyqMAsGA1UdDwQEAwIHgDAJBgNV
+HRMEAjAAMD4GCSqGSIb3DQEBCjAxoA0wCwYJYIZIAWUDBAIBoRowGAYJKoZIhvcNAQEIMAsGCWCG
+SAFlAwQCAaIEAgIBXgOCAYEAM85MFkwLF/ULMsV1kLAjf1Koy2CnG/QuxBsExFplOtgvIOzZQX2K
+1kE4HS4gAuPVs8+rghfybC2z8Jz/w2ijtZQ/ZyQR4a2XHFHd6A8MxUYCIyrWYucVHp0+YmaMBcFJ
+szAujo9j3K3qDJUFTxeSHyzyRKtFHve1FZ355sqVW/hO7bc73TH+y/mSKTyOBb1LDnvCPvpbq+WL
+Qa4Zw2vfPZB+Fbz6IcJ+UZzM8AeI9OZ977qmWrx6YUUh957ZXrAw4AEt4y8+q2rBoRYza3+KbzSt
+Na8hq4p4HTGs4DnUBammCvMr/MbMJ/elwu2q0wePaN68x25t6JFSCZf6vmnqW6wv1NLGD6bP5SBN
+Z6R+0M0NmvasH0uM4E+YDgr0f7WX9sxfS3lD6J71VtbQFc+9nmVgVdxyoN5rE87ZuoxJIWIj+kJ8
+0ZB16xmUCAJ4rXUC77SO0udIJ2oFk7/Q1OhxiqnxlfnWtdoYPSMMSKwzvlZf++SDsEqlFT5/uc6T
+O+cI</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://eidas.ria.ee/EidasNode/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://eidas.ria.ee/EidasNode/ServiceMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIFUzCCA4qgAwIBAgIJAOFxQdTXRs79MD4GCSqGSIb3DQEBCjAxoA0wCwYJYIZIAWUDBAIBoRow
+GAYJKoZIhvcNAQEIMAsGCWCGSAFlAwQCAaIEAgIBXjCBiTELMAkGA1UEBhMCRUUxFDASBgNVBAgM
+C0hhcmp1IENvdW55MRAwDgYDVQQHDAdUYWxsaW5uMS4wLAYDVQQKDCVFc3RvbmlhbiBJbmZvcm1h
+dGlvbiBTeXN0ZW0gQXV0aG9yaXR5MSIwIAYDVQQDDBllaWRhcy5yaWEuZWUtc2VydmljZS1zaWdu
+MB4XDTE4MDkyNzEyMDIwN1oXDTIwMDkyNjEyMDIwN1owgYkxCzAJBgNVBAYTAkVFMRQwEgYDVQQI
+DAtIYXJqdSBDb3VueTEQMA4GA1UEBwwHVGFsbGlubjEuMCwGA1UECgwlRXN0b25pYW4gSW5mb3Jt
+YXRpb24gU3lzdGVtIEF1dGhvcml0eTEiMCAGA1UEAwwZZWlkYXMucmlhLmVlLXNlcnZpY2Utc2ln
+bjCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBALwjsdRFtFfxH6ZBc7Mk7oZYECiwCw0Q
+ZneZ/2ZTJfv4HKkcoPf0n+Y87t5UrRoi8ls3URV09+KLCQZVbHc6R4Fw/DXNAYfTeFp03wLwJbb4
+H5wTXuUxK14NTmaBDcHS9NthTC4PQRjic7z7Tp9TXAW5TL32+xl9/XMjxWKW9MDjWl0Oy+1gtAA7
+Xh7BtWAVHaBmL14qcksWCWz87QYROHw/do+4RDDhDncWXCt+3cGoaYdNWL4wM3lOKpG1R9myVlVL
+lzQHXaZs8zSsSQscDbZ/WBChTUA+uQloJwrhobnGJ3nd85oQfU7mRK1rUNwSGL1UpdPxKFjm/X0N
+KFctZKtR8k4GoUV4M2dnSbVlNFqY+xeURGIOWwOzRauukqzTVrovMhYgG6ubQaxTHseYHjQeCzJG
+XZdCI6VA3R5lpbQEHM9sHCZWLHqChbeAqM4KecKXt3a2RMLsXQOQ3/ZTjfmvBA4+sUsQBsHorY/q
+DiG+u8XBAbIlnbTRL3viwgnYzwIDAQABo1owWDAdBgNVHQ4EFgQUU4eYZTdYfbp/sK2mIwKtQN0X
+X50wHwYDVR0jBBgwFoAUU4eYZTdYfbp/sK2mIwKtQN0XX50wCwYDVR0PBAQDAgeAMAkGA1UdEwQC
+MAAwPgYJKoZIhvcNAQEKMDGgDTALBglghkgBZQMEAgGhGjAYBgkqhkiG9w0BAQgwCwYJYIZIAWUD
+BAIBogQCAgFeA4IBgQAuMWZSG8KjaP+zMf4TqrGVdKCmoAu0uaG4Krk6OYBeul/NyieUR67W1pYe
+bIBA8QsL0ahdUPGwqg+uZSaNeH9AOnqIAd4f2ZFxAvvEgafVoFJ7lQuSpE+A1dVyXViWf301xxmg
+w80WF91CfKJd0fsu3XotMiPqdiiU0h8qJl5JJvzLnnJXSFBjbnDJZzDJBEhre62irtLwrtalsv35
+N2Pa8XxgE8Rx+gjZ5Hyo+KFfET8R/UJIJbpcucq8XoO3g0gwLev6wUgZa89R+d88AH/NwFtI8i26
++ERt8hAsVIiL81Ch0jq5ITxY+sCqofKbD/xxU+SMP+t1ykfW6nFIgATYS6UMG+IlmOtkxLJ3ysuG
+uKhYadgb4KyEjghShqUn+togiJzhP1DaLiKZRi++vJInUPdv1+TU0af/bCfe2Fsi8el65D1iPreX
+vCz8vDzoJLnpBBhcGnPhX0IkKnABlXmYp0Nct4UFTwKLG5JwIoIGzTSVO0Vax50F8mEx/htVAVk=</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+</ser:MetadataList>

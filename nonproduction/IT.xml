@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="IT">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIECjCCAvKgAwIBAgIJAN3SD57IEWotMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMUAwPgYDVQQDDDdJdGFs
+aWFuIGVJREFTIE5vZGUgQ29ubmVjdG9yIFBBIFNBTUwgTWV0YWRhdGEgU2lnbmF0dXJlMB4XDTE4
+MTAwNTE3MjE0M1oXDTI4MTAwMjE3MjE0M1owgbQxCzAJBgNVBAYTAklUMS0wKwYDVQQKDCRBZ2Vu
+emlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZSAtIEFnSUQxNDAyBgNVBAsMK0l0YWxpYW4gZUlEQVMg
+UHJlLXByb2R1Y3Rpb24gSW5mcmFzdHJ1Y3R1cmUxQDA+BgNVBAMMN0l0YWxpYW4gZUlEQVMgTm9k
+ZSBDb25uZWN0b3IgUEEgU0FNTCBNZXRhZGF0YSBTaWduYXR1cmUwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQCpn3ylCRurJwnPyaaGQ5jq2f2a79yfVoipvoisthOenxT9CtmxtU81dwYj
+oCSyVrgRrqzxEKeG4h9nmnp3mmTsDmuBECYShKMZxPfOqNOuDGXcH4/+VAFix5bfppEAcXPqScKH
+myf17f2JXhdp+YjY8XgR0T24Bkmh3FasdTKOYaAooAubwnasE/6lwqBu2fCLS+bfvf0Qan96Hmhw
+AcTy3gavLekfz9d+JJ1L23uFofiDBSgX5wbs5Nzt8BAsnO5WysFPhCZ6s89BRJu6ZLVYi3qJY/Gy
+arcrNqdOBqbKNNlstR5YN+cQj16sS6xc/RzxoNtOCd/6sUJov/lMnNZXAgMBAAGjHTAbMAwGA1Ud
+EwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4IBAQBMTS9r5X8KIeE1PqGHE3mD
+EehHkIrrhGQwk3qjdoQFNTrTbIu43Hd7dNTd7j/tCGaySZIxy4jXkQwszvJ7KKL36lntXSd70xVU
+UuMRuxtJOBTKVyESerDh+5XOoqEhReRKmMB/2pjWfGv2XayjElfQPSEQM7rWzKiE5KpgPXjy+zt4
+gAsFSxMd5LGKzxGu8TaAWVWUuSQ0wE6eOAL5PHxNkM5S91Gz1gefJAtQd/OIjq29PvZJ+3ucexaZ
+VC5AlpKIRflUKF2G7RBObbjgDvJMN31aWoTaY1GiNU4hOAqdRQad3gKS4A32CownJBJpuNn4KgZE
+QJ4apa1tAG6ntOnq</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://service.pre.eid.gov.it/EidasNode/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://service.pre.eid.gov.it/EidasNode/ServiceMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIEAjCCAuqgAwIBAgIJAP5LuC9PutiGMA0GCSqGSIb3DQEBCwUAMIGwMQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMTwwOgYDVQQDDDNJdGFs
+aWFuIGVJREFTIFByb3h5IFNlcnZpY2UgU0FNTCBNZXRhZGF0YSBTaWduYXR1cmUwHhcNMTgxMDA1
+MTcyMTM0WhcNMjgxMDAyMTcyMTM0WjCBsDELMAkGA1UEBhMCSVQxLTArBgNVBAoMJEFnZW56aWEg
+cGVyIGwnSXRhbGlhIERpZ2l0YWxlIC0gQWdJRDE0MDIGA1UECwwrSXRhbGlhbiBlSURBUyBQcmUt
+cHJvZHVjdGlvbiBJbmZyYXN0cnVjdHVyZTE8MDoGA1UEAwwzSXRhbGlhbiBlSURBUyBQcm94eSBT
+ZXJ2aWNlIFNBTUwgTWV0YWRhdGEgU2lnbmF0dXJlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAx+UpVma7XqOX7eNYuiXGrZvysAY1Cb/hXbu4sAFJzpwN9oJ1kK2qnKkFCYF04u6Te4zs
+fM4FfPnaLtAZzqq/WaWWhtKR50crvnEi4LdGO0xUld/MIszq2wyXVPGIkNpOMDHyGO4e9tAkhDQv
+svCIu+j2oQ4MjCqO+fNHv2jpcjQn+xZNr18VbFCxFjZ7OSb5L4uvPxcqFjjNTy5SN0MkzRrOTN+i
+hXvPbjp1eWDJFDTkEPRIZlt7k2tKnM9FKuKl8IWJFdM/waTAmyFCuFAXjauK3IWH2A9wPSVT2wLu
+rCo7eVjCT5EBzk/PVK4hNEkWG72WdtTVhzRB6URPwnxjtQIDAQABox0wGzAMBgNVHRMBAf8EAjAA
+MAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAQEAYYNK97h2mAo4yLHpB+IEbQdn8mxEMLp9
+iiqtLTRLOJbn0LnlW8E1QY1SCYmzmZD78Vh+VU9oVxqm/8BKpIO+1fHsOF4goMfOcZtNNjYrtdWH
+6vPocvq5OAZyBpZnho4QAmg/VK/6u2yaKLDGFKY6fNqBYrLhbo9F6l7a3GG7WPCNmmNgAY03CcGu
+vVc9fztvR7sbaAHcAsD50Sqk05dSpsGEJGxOKbdvf+7VTHLZzNlDPyi4TrElHSthtPJPbBVChKR4
+ZA13zUew7+L6asv93obnZIsYywdE/X5oNGfupWTg4XDcdA5IQf//JiG1A1fV8mi5GpW/8zEUHaD9
+QioBQw==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+</ser:MetadataList>
