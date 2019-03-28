@@ -40,7 +40,7 @@ np:
 	$(MDSL) -t LT -p https://testpeps.eid.lt/EidasNode/ServiceMetadata -c https://testpeps.eid.lt/EidasNode/ConnectorMetadata -o nonproduction/LT.xml
 	$(MDSL) -t LU -p https://eidas-test.services-publics.lu/cisie-node/ServiceMetadata -c https://eidas-test.services-publics.lu/cisie-node/ConnectorMetadata -o nonproduction/LU.xml
 	$(MDSL) -t MT -p https://stgmteidasnode.gov.mt/EidasNode/ServiceMetadata -c https://stgmteidasnode.gov.mt/EidasNode/ConnectorMetadata -o nonproduction/MT.xml
-	$(MDSL) -t NL -c https://acc-eidas.minez.nl/EidasNodeC/ConnectorMetadata -o nonproduction/NL.xml
+	$(MDSL) -t NL -p https://acc-eidas.minez.nl/EidasNodeP/ServiceMetadata -c https://acc-eidas.minez.nl/EidasNodeC/ConnectorMetadata -o nonproduction/NL.xml
 	$(MDSL) -t NO -p https://eidas-test1.difi.eon.no/EidasNode/ServiceMetadata -c https://eidas-test1.difi.eon.no/EidasNode/ConnectorMetadata  -o nonproduction/NO.xml
 	$(MDSL) -t PL -p https://test.eidas.gov.pl/EidasNode/ServiceMetadata -c https://test.eidas.gov.pl/EidasNode/ConnectorMetadata -o nonproduction/PL.xml
 	$(MDSL) -t PT -p https://preprod.eidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c  https://preprod.eidas.autenticacao.gov.pt/EidasNode/ConnectorMetadata -o nonproduction/PT.xml
