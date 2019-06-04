@@ -20,6 +20,7 @@ p:
 	$(MDSL) -t SI -p https://sipeps.gov.si/EidasNode/ServiceMetadata -c https://sipeps.gov.si/EidasNode/ConnectorMetadata -o production/SI.xml
 	$(MDSL) -t ES -p https://eidas.redsara.es/EidasNode/ServiceMetadata -c https://eidas.redsara.es/EidasNode/ConnectorMetadata -o production/ES.xml
 	$(MDSL) -t LU -p https://eidas.services-publics.lu/cisie-node/ServiceMetadata -c https://eidas.services-publics.lu/cisie-node/ConnectorMetadata -o production/LU.xml
+        $(MDSL) -t BG -c https://eidas.egov.bg/EidasNode/ConnectorMetadata -o production/BG.xml
 
 
 np:
@@ -50,3 +51,4 @@ np:
 	$(MDSL) -t SI -p https://sipeps-test.gov.si/EidasNode/ServiceMetadata -c https://sipeps-test.gov.si/EidasNode/ConnectorMetadata -o nonproduction/SI.xml
 	$(MDSL) -t ES -p https://se-eidas.redsara.es/EidasNode/ServiceMetadata -c https://se-eidas.redsara.es/EidasNode/ConnectorMetadata -o nonproduction/ES.xml
 	$(MDSL) -t UK -c https://www.integration.signin.service.gov.uk/SAML2/metadata/connector -o nonproduction/UK.xml	
+        $(MDSL) -t BG -c https://eidas-test.egov.bg/EidasNode/ConnectorMetadata -o nonproduction/BG.xml

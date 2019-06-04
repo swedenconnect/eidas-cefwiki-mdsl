@@ -19,23 +19,4 @@ NvYrhA==</ds:X509Certificate>
       </ds:X509Data>
     </ds:KeyInfo>
   </ser:MetadataLocation>
-  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://srv.dev.eidasnode.cz/EidasNode/ServiceMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://srv.dev.eidasnode.cz/EidasNode/ServiceMetadata"/>
-    <ds:KeyInfo>
-      <ds:X509Data>
-        <ds:X509Certificate>MIICcjCCAdOgAwIBAgIJAJ28a9s82O9uMAoGCCqGSM49BAMCMFAxCzAJBgNVBAYTAkNaMQ8wDQYD
-VQQHDAZQcmFndWUxDzANBgNVBAoMBkNaLk5JQzEfMB0GA1UEAwwWc2lnbi1zcnYtZGV2LWVpZGFz
-bm9kZTAeFw0xODExMjIxMTM2NThaFw0yODExMTkxMTM2NThaMFAxCzAJBgNVBAYTAkNaMQ8wDQYD
-VQQHDAZQcmFndWUxDzANBgNVBAoMBkNaLk5JQzEfMB0GA1UEAwwWc2lnbi1zcnYtZGV2LWVpZGFz
-bm9kZTCBmzAQBgcqhkjOPQIBBgUrgQQAIwOBhgAEAY1SnPw54BGd1HRyIY+ZEloaIGhfPrCmsQm+
-FP5ZpyysyJ2ZDtjojMbHZMIDRifalFn51zxRsmg1/PL3Vwm55M72Ad6e96DxyW2f4DPp+LCvFUAh
-KeIqzGcoWQPSnnPunFPw6DOQ//nirDJmms4xbe3H4TxF9afFWHjWk9krgnTHKoE1o1MwUTAdBgNV
-HQ4EFgQUGFCwG9SslTbw3vxYuqNBRE4d+vYwHwYDVR0jBBgwFoAUGFCwG9SslTbw3vxYuqNBRE4d
-+vYwDwYDVR0TAQH/BAUwAwEB/zAKBggqhkjOPQQDAgOBjAAwgYgCQgEpEVXSobXFF/yJmQXRwd/l
-I56qV18M7uClIO8VY7W11EfHhwWTVA5446dDFC7JLWqvZzTmB5UPu5K8fWkTrziGLAJCAX2y8szL
-mQFAHyQJ/mwJp32EMSKmjz7oqL9C+QVGuVdj4lQn9UsBkRxnnBGZddGPPFZ9HshFherShSKPcZsL
-teD9</ds:X509Certificate>
-      </ds:X509Data>
-    </ds:KeyInfo>
-  </ser:MetadataLocation>
 </ser:MetadataList>
