@@ -14,7 +14,7 @@ usage () {
 while getopts 't:c:p:o:' c; do
    case $c in
       t) territory="$OPTARG" ;;
-      c) connector="$OPTARG" ;;
+      c) connector="$connector $OPTARG" ;;
       p) proxy="$OPTARG" ;;
       o) output="$OPTARG" ;;
       h) usage ;;
@@ -29,8 +29,10 @@ cat>$x<<EOF
 EOF
 
 if [ "x$connector" != "x" ]; then
+for c in $connector; do
 c_xml=`mktemp`
-wget -t1 --timeout=5 --read-timeout=5 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
+wget -t1 --timeout=5 --read-timeout=5 --no-check-certificate -qO$c_xml $c && echo "<xi:include href=\"$c_xml\"/>" >> $x
+done
 fi
 
 if [ "x$proxy" != "x" ]; then

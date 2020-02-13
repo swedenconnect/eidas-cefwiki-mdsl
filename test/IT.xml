@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="IT">
+  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata" validUntil="2022-11-09T15:08:22.061Z">
+    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIECjCCAvKgAwIBAgIJAN3SD57IEWotMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMUAwPgYDVQQDDDdJdGFs
+aWFuIGVJREFTIE5vZGUgQ29ubmVjdG9yIFBBIFNBTUwgTWV0YWRhdGEgU2lnbmF0dXJlMB4XDTE4
+MTAwNTE3MjE0M1oXDTI4MTAwMjE3MjE0M1owgbQxCzAJBgNVBAYTAklUMS0wKwYDVQQKDCRBZ2Vu
+emlhIHBlciBsJ0l0YWxpYSBEaWdpdGFsZSAtIEFnSUQxNDAyBgNVBAsMK0l0YWxpYW4gZUlEQVMg
+UHJlLXByb2R1Y3Rpb24gSW5mcmFzdHJ1Y3R1cmUxQDA+BgNVBAMMN0l0YWxpYW4gZUlEQVMgTm9k
+ZSBDb25uZWN0b3IgUEEgU0FNTCBNZXRhZGF0YSBTaWduYXR1cmUwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQCpn3ylCRurJwnPyaaGQ5jq2f2a79yfVoipvoisthOenxT9CtmxtU81dwYj
+oCSyVrgRrqzxEKeG4h9nmnp3mmTsDmuBECYShKMZxPfOqNOuDGXcH4/+VAFix5bfppEAcXPqScKH
+myf17f2JXhdp+YjY8XgR0T24Bkmh3FasdTKOYaAooAubwnasE/6lwqBu2fCLS+bfvf0Qan96Hmhw
+AcTy3gavLekfz9d+JJ1L23uFofiDBSgX5wbs5Nzt8BAsnO5WysFPhCZ6s89BRJu6ZLVYi3qJY/Gy
+arcrNqdOBqbKNNlstR5YN+cQj16sS6xc/RzxoNtOCd/6sUJov/lMnNZXAgMBAAGjHTAbMAwGA1Ud
+EwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4IBAQBMTS9r5X8KIeE1PqGHE3mD
+EehHkIrrhGQwk3qjdoQFNTrTbIu43Hd7dNTd7j/tCGaySZIxy4jXkQwszvJ7KKL36lntXSd70xVU
+UuMRuxtJOBTKVyESerDh+5XOoqEhReRKmMB/2pjWfGv2XayjElfQPSEQM7rWzKiE5KpgPXjy+zt4
+gAsFSxMd5LGKzxGu8TaAWVWUuSQ0wE6eOAL5PHxNkM5S91Gz1gefJAtQd/OIjq29PvZJ+3ucexaZ
+VC5AlpKIRflUKF2G7RBObbjgDvJMN31aWoTaY1GiNU4hOAqdRQad3gKS4A32CownJBJpuNn4KgZE
+QJ4apa1tAG6ntOnq</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+    <md:Extensions>
+      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+        <saml2:Attribute Name="http://eidas.europa.eu/entity-attributes/protocol-version" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">1.1</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="http://eidas.europa.eu/entity-attributes/application-identifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+          <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">CEF:eIDAS-ref:1.4.4</saml2:AttributeValue>
+        </saml2:Attribute>
+      </mdattr:EntityAttributes>
+      <eidas:SPType xmlns:eidas="http://eidas.europa.eu/saml-extensions">public</eidas:SPType>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:X509Data>
+            <ds:X509Certificate>MIID+DCCAuCgAwIBAgIJALTIlHkBFFb1MA0GCSqGSIb3DQEBCwUAMIGrMQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMTcwNQYDVQQDDC5JdGFs
+aWFuIGVJREFTIE5vZGUgQ29ubmVjdG9yIFBBIFNBTUwgU2lnbmF0dXJlMB4XDTE4MTAwOTEyMTYy
+NVoXDTI4MTAwNjEyMTYyNVowgasxCzAJBgNVBAYTAklUMS0wKwYDVQQKDCRBZ2VuemlhIHBlciBs
+J0l0YWxpYSBEaWdpdGFsZSAtIEFnSUQxNDAyBgNVBAsMK0l0YWxpYW4gZUlEQVMgUHJlLXByb2R1
+Y3Rpb24gSW5mcmFzdHJ1Y3R1cmUxNzA1BgNVBAMMLkl0YWxpYW4gZUlEQVMgTm9kZSBDb25uZWN0
+b3IgUEEgU0FNTCBTaWduYXR1cmUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDSu3ew
+w/VxVaDcujgGm7xgCwW9ou4UxsKvqXDwTwlio3S3JYfqBDojSdvIkJK4tc8MCkODSRR7yCBUa5q7
+aA+vnwQMSvXqEc5IUiMEiXHB7HW2DiiLD+7W4WpeCC3MoS27gp3cKahfaG5JRETPmtDqNjRht4gR
+zt3R3EHEptivFdfWcUFh1bQd8ijHjRrotNtyxnH0ea5ki6Vlio3F06XY1nOtgZOEKEQdppa8PDH8
+6tNjLFwDzfplBGfu0+KsXq0Q/UHSN5AVzjEd3LZkUObx3MW7lO3Ouy0nC85HXvvvO53qEUflVUmX
+s7rKT4Uz38WDVW2+P9xMhu1yc1cwDPq/AgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQD
+AgbAMA0GCSqGSIb3DQEBCwUAA4IBAQCvPIGQAhCltvtXJRGEHJD+ziMijkA19KZo3XQXRstAd3AO
+QDfcqbr4ecIypDe49zPv952DS6GQIGchm4XiXR5vnX/qzPn97E3/5cXK6bV/kJJBKiNFRMVorf/5
+wfiL7hV4NJbupAhmeoqjn+11aP9gLZuMMKngqQ0WLXzS3qTIl+6OOFGX2JRiFw48TyJPIUGoDBIV
+WDaL5EOHH3vZkzesarpvJ4PmfBEIfnFRsdCD5l56QRNdtFLnPfARyiQyzeWT2UI8YBu8k6oYCsLE
+Xgg0gvCho7EJywp+NOOMkAGaD4B6963JvANJUKY3arV3s6FqnEdIK/BoSNHufv6qqbL3</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:X509Data>
+            <ds:X509Certificate>MIID+jCCAuKgAwIBAgIJAMwrMY3+ccpUMA0GCSqGSIb3DQEBCwUAMIGsMQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMTgwNgYDVQQDDC9JdGFs
+aWFuIGVJREFTIE5vZGUgQ29ubmVjdG9yIFBBIFNBTUwgRW5jcnlwdGlvbjAeFw0xODEwMDkxMjUy
+NTJaFw0yODEwMDYxMjUyNTJaMIGsMQswCQYDVQQGEwJJVDEtMCsGA1UECgwkQWdlbnppYSBwZXIg
+bCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJdGFsaWFuIGVJREFTIFByZS1wcm9k
+dWN0aW9uIEluZnJhc3RydWN0dXJlMTgwNgYDVQQDDC9JdGFsaWFuIGVJREFTIE5vZGUgQ29ubmVj
+dG9yIFBBIFNBTUwgRW5jcnlwdGlvbjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMeN
+RQmVuFe77TueqooMDCECxgBSBqGFN0+zFTN388YEPkLOO+lvZiJk5KMCt01RI9bEQwqzR1CnvqlA
+gIO0DHATRDN7QRIyQZp7dikbYf2x5ZVP1eQ6y/6eHelzcZyuYFi202mjNt5bb6AO3FSpDfD1qjhM
+liFqUl1SHKCkA3B7sfu1H20ebxxV2A+2unR7vIyZlFdOsdIkwKEc6YPiXldpVH7/nMwGSp/FLpVD
+CwxS56b2C3I9bG957gq9m/cb10zGdMLnHmUyoEFQWe4QkRbgzVhoN9KklTMBzqLfsJute18lOCN5
+m5E9eDKH7v+thW4om4zO3pAM59Ixgm/ONr0CAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8E
+BAMCBSAwDQYJKoZIhvcNAQELBQADggEBABmPGOv6D3RswMUsBxixOFlmXc2kfCA8eulccGWKDUOi
+GIjkLDiuVI2vRFoFrwSz5IAS9r0jsnocdkIdhcpQ5GsZXvl1igBsFrZ8Lj4lcYetV0Ewhck4UhXv
+oyMN5zIc5ZYQjhvZv4RnfPUtPwrV6Xv29/47s9KEm2PHAEXEQwb5ChCpNioXIBUSb4wuQ63so6AS
+fzVcrOo8hZS+C27RR/C5hb5pD6EaxceUZTqw+S+IhPzUbQNBEOniTKQk3potGm+2bqxXlpcNuXAG
+EESt2kIt7WMyPbKhcHWnvWREUun0dFTyATH7hlbnuJSwQSrufQPfWkAs10Dmpq+wXdmt9MI=</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://connector.pre.eid.gov.it/EidasNode/ColleagueResponse" index="0" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://connector.pre.eid.gov.it/EidasNode/ColleagueResponse" index="1"/>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Agenzia per l'Italia Digitale - AgID</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Agenzia per l'Italia Digitale - AgID</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://www.agid.gov.it</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:Company>Agenzia per l'Italia Digitale - AgID</md:Company>
+      <md:GivenName>Massimiliano</md:GivenName>
+      <md:SurName>Pucciarelli</md:SurName>
+      <md:EmailAddress>pucciarelli@agid.gov.it</md:EmailAddress>
+      <md:TelephoneNumber>+39 (06) 8526 4832</md:TelephoneNumber>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:Company>Agenzia per l'Italia Digitale - AgID</md:Company>
+      <md:GivenName>Paolo</md:GivenName>
+      <md:SurName>Smiraglia</md:SurName>
+      <md:EmailAddress>ficep.contact.support@agid.gov.it</md:EmailAddress>
+      <md:TelephoneNumber>+39 (06) 8526 4465</md:TelephoneNumber>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://service.pre.eid.gov.it/EidasNode/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://service.pre.eid.gov.it/EidasNode/ServiceMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIEAjCCAuqgAwIBAgIJAP5LuC9PutiGMA0GCSqGSIb3DQEBCwUAMIGwMQswCQYDVQQGEwJJVDEt
+MCsGA1UECgwkQWdlbnppYSBwZXIgbCdJdGFsaWEgRGlnaXRhbGUgLSBBZ0lEMTQwMgYDVQQLDCtJ
+dGFsaWFuIGVJREFTIFByZS1wcm9kdWN0aW9uIEluZnJhc3RydWN0dXJlMTwwOgYDVQQDDDNJdGFs
+aWFuIGVJREFTIFByb3h5IFNlcnZpY2UgU0FNTCBNZXRhZGF0YSBTaWduYXR1cmUwHhcNMTgxMDA1
+MTcyMTM0WhcNMjgxMDAyMTcyMTM0WjCBsDELMAkGA1UEBhMCSVQxLTArBgNVBAoMJEFnZW56aWEg
+cGVyIGwnSXRhbGlhIERpZ2l0YWxlIC0gQWdJRDE0MDIGA1UECwwrSXRhbGlhbiBlSURBUyBQcmUt
+cHJvZHVjdGlvbiBJbmZyYXN0cnVjdHVyZTE8MDoGA1UEAwwzSXRhbGlhbiBlSURBUyBQcm94eSBT
+ZXJ2aWNlIFNBTUwgTWV0YWRhdGEgU2lnbmF0dXJlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAx+UpVma7XqOX7eNYuiXGrZvysAY1Cb/hXbu4sAFJzpwN9oJ1kK2qnKkFCYF04u6Te4zs
+fM4FfPnaLtAZzqq/WaWWhtKR50crvnEi4LdGO0xUld/MIszq2wyXVPGIkNpOMDHyGO4e9tAkhDQv
+svCIu+j2oQ4MjCqO+fNHv2jpcjQn+xZNr18VbFCxFjZ7OSb5L4uvPxcqFjjNTy5SN0MkzRrOTN+i
+hXvPbjp1eWDJFDTkEPRIZlt7k2tKnM9FKuKl8IWJFdM/waTAmyFCuFAXjauK3IWH2A9wPSVT2wLu
+rCo7eVjCT5EBzk/PVK4hNEkWG72WdtTVhzRB6URPwnxjtQIDAQABox0wGzAMBgNVHRMBAf8EAjAA
+MAsGA1UdDwQEAwIGwDANBgkqhkiG9w0BAQsFAAOCAQEAYYNK97h2mAo4yLHpB+IEbQdn8mxEMLp9
+iiqtLTRLOJbn0LnlW8E1QY1SCYmzmZD78Vh+VU9oVxqm/8BKpIO+1fHsOF4goMfOcZtNNjYrtdWH
+6vPocvq5OAZyBpZnho4QAmg/VK/6u2yaKLDGFKY6fNqBYrLhbo9F6l7a3GG7WPCNmmNgAY03CcGu
+vVc9fztvR7sbaAHcAsD50Sqk05dSpsGEJGxOKbdvf+7VTHLZzNlDPyi4TrElHSthtPJPbBVChKR4
+ZA13zUew7+L6asv93obnZIsYywdE/X5oNGfupWTg4XDcdA5IQf//JiG1A1fV8mi5GpW/8zEUHaD9
+QioBQw==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+</ser:MetadataList>

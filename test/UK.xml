@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="UK">
+  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="VERIFY-HUB" entityID="https://www.integration.signin.service.gov.uk/SAML2/metadata/connector" validUntil="2020-02-24T13:27:08.000Z" xsi:type="md:EntityDescriptorType">
+    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIDsTCCApmgAwIBAgIQObsNdkQLxzDEmsn8jooSIDANBgkqhkiG9w0BAQsFADBUMQswCQYDVQQGEwJHQjEXMBUGA1UEChMOQ2FiaW5ldCBPZmZpY2UxDDAKBgNVBAsTA0dEUzEeMBwGA1UEAxMVSURBUCBNZXRhZGF0YSBUZXN0IENBMB4XDTE5MDkxMTAwMDAwMFoXDTIwMDkxMDIzNTk1OVowgYQxCzAJBgNVBAYTAkdCMQ8wDQYDVQQIEwZMb25kb24xDzANBgNVBAcTBkxvbmRvbjEXMBUGA1UEChQOQ2FiaW5ldCBPZmZpY2UxDDAKBgNVBAsUA0dEUzEsMCoGA1UEAxMjVGVzdCBNZXRhZGF0YSBTaWduaW5nIEVDICgyMDE5MDkxMSkwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAATrcleFYVGiO8vh9XJ9RPS7GDZNhaJTO7NowXwrwPCbvL5suW+iL7RAwoXXf5ITwdjGJ4akGNiGKlsLbkKLVOixRtaFHoF1Kb+S+vvTJEJjdc0RXWoqOq9gUdOY0Uzm6S6jgfswgfgwDAYDVR0TAQH/BAIwADBdBgNVHR8EVjBUMFKgUKBOhkxodHRwOi8vb25zaXRlY3JsLnRydXN0d2lzZS5jb20vQ2FiaW5ldE9mZmljZUlEQVBNZXRhZGF0YVRlc3RDQS9MYXRlc3RDUkwuY3JsMA4GA1UdDwEB/wQEAwIHgDAdBgNVHQ4EFgQUhD1aHv4KDMTavhc8n2XgJtmCJpowHwYDVR0jBBgwFoAUwh9gCzS291w12NmgQRIhK9mEa98wOQYIKwYBBQUHAQEELTArMCkGCCsGAQUFBzABhh1odHRwOi8vc3RkLW9jc3AudHJ1c3R3aXNlLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEASO73lDD1ni0QQthGWf5TJluIk8OdG/l5XZfCz/ubqdDfAdTm/l7lHU2E2EW7ztmqrr4KNsEXLvkgHwFyU8xr+kP1uoaxF73J2rOi1tSsd/5DJzQe6vDyNzbIkiQ/IE2cCE4i/WT7bCBXCFuPoRe/iPwd7Tlw44PlWf9Cd//tPss9NRKXwZFf4y9vtwp3KVxElO2UMvlr8S897jSoEDPDXxhJ6cOGazhg+29I6lYLxV2NgESG36BOdCK+EMX63te8Qblg5RDaHTIm+UJUTMx25v1Q/OY5AY/cg64fPFXtZLrOqcUlOpBv4o7nkPEG4ugUwpwE4QjqadpTzAi8lDkhqA==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+    <md:SPSSODescriptor WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" xsi:type="md:SPSSODescriptorType">
+      <md:KeyDescriptor use="encryption" xsi:type="md:KeyDescriptorType">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:KeyName xmlns:xs="http://www.w3.org/2001/XMLSchema">https://www.integration.signin.service.gov.uk/SAML2/metadata/connector</ds:KeyName>
+          <ds:X509Data xsi:type="ds:X509DataType">
+            <ds:X509Certificate>MIIESjCCAzKgAwIBAgIQG7DmJUxdutz4dOZ+CceIjzANBgkqhkiG9w0BAQsFADBL
+MQswCQYDVQQGEwJHQjEXMBUGA1UEChMOQ2FiaW5ldCBPZmZpY2UxDDAKBgNVBAsT
+A0dEUzEVMBMGA1UEAxMMSURBUCBUZXN0IENBMB4XDTE5MDgwMTAwMDAwMFoXDTIw
+MDQyNzIzNTk1OVowgYAxCzAJBgNVBAYTAkdCMQ8wDQYDVQQIEwZMb25kb24xDzAN
+BgNVBAcTBkxvbmRvbjEXMBUGA1UEChQOQ2FiaW5ldCBPZmZpY2UxDDAKBgNVBAsU
+A0dEUzEoMCYGA1UEAxMfSHViIEVuY3J5cHRpb24gKDIwMTkwODAxMTQzNzIyKTCC
+ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMv6QmzSoKb6b1+GeFxygk00
+1M+zBuxiw6mM1/Q7kGWRCtxkeucslCPZUBK9LkItiLWzYnAcEO5NXzuOW8f8+601
+/WdgcxTDt0+UVlUTeSAttPd6FJWZTzDGaSPzUErudjJ+iqzC+wbx6QbnVddoUQsq
+6O0PnPe+A7U2Pf5Jq2qYBBpJvYUJFAl1r3jiadwL4RSxlCa8dLMW+86mkXfjXUBR
+wsn/52eMQLe6RN348XVKyOjpESigGhVKVQr9sYT6O5rIEc4oA/ZhVe+FFc88tZSN
+7t/UixozQIYsL/HjlGSjEQbGT0dnm3QqFcT7lIklgSjbpc4mbmd3UBDtnSzjtFcC
+AwEAAaOB8zCB8DAMBgNVHRMBAf8EAjAAMFUGA1UdHwROMEwwSqBIoEaGRGh0dHA6
+Ly9vbnNpdGVjcmwudHJ1c3R3aXNlLmNvbS9DYWJpbmV0T2ZmaWNlSURBUFRlc3RD
+QS9MYXRlc3RDUkwuY3JsMA4GA1UdDwEB/wQEAwIFIDAdBgNVHQ4EFgQUZ4rXQ8Wq
+V5TJSVWPdhRFeZSs+80wHwYDVR0jBBgwFoAUahFNZFDf3mNvV6GIH/gDlQ4iBLQw
+OQYIKwYBBQUHAQEELTArMCkGCCsGAQUFBzABhh1odHRwOi8vc3RkLW9jc3AudHJ1
+c3R3aXNlLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEAjn9U6gJ/7ivcgAgQdCAOYc39
+tpo30wlrINZF05Pb4njZpGciRl0rQ4WHD+TsHbMXnV+pvoHNxrM2C5p6YznmPIID
+cnd+Y6/umZlhJkhf2ZKeR1vHBYJoWDiw8f3qSpZhXMAfgLEL7yu1yW3rctnPrR3x
+6B42JQ7euMWV1NVF+7BF0BQkcIXPUvYuQmmfa1974czcvbLUpTtkRKqMUtJVuq69
+WI59LP0I+oV5xZY2Yf4y/1Ox8vLSFiFM6MNrxBeTOENSKvoGPvY5qG64dllo5iGj
+V5zmq54dQQ7QXRvI+iI3LHVQhIijsTwoB1kgLpaqHcAkGAxxuu0wZF79TVHj0A==
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="signing" xsi:type="md:KeyDescriptorType">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:KeyName xmlns:xs="http://www.w3.org/2001/XMLSchema">https://www.integration.signin.service.gov.uk/SAML2/metadata/connector</ds:KeyName>
+          <ds:X509Data xsi:type="ds:X509DataType">
+            <ds:X509Certificate>MIIERjCCAy6gAwIBAgIQYF2oQmttyPAt5ufA6D9rNDANBgkqhkiG9w0BAQsFADBL
+MQswCQYDVQQGEwJHQjEXMBUGA1UEChMOQ2FiaW5ldCBPZmZpY2UxDDAKBgNVBAsT
+A0dEUzEVMBMGA1UEAxMMSURBUCBUZXN0IENBMB4XDTE5MDgwMTAwMDAwMFoXDTIw
+MDQyNzIzNTk1OVowfTELMAkGA1UEBhMCR0IxDzANBgNVBAgTBkxvbmRvbjEPMA0G
+A1UEBxMGTG9uZG9uMRcwFQYDVQQKFA5DYWJpbmV0IE9mZmljZTEMMAoGA1UECxQD
+R0RTMSUwIwYDVQQDExxIdWIgU2lnbmluZyAoMjAxOTA4MDExNDIzNTApMIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzwzJX/asUMkeXwHek4ecND8AeMT1
+q5JFMIaaQBu2q/Y1LiXxv3xxjxrzeptrYGZEYWxK1uGYl2xNHhi6edp0DKC7Pf0a
+nhsRUwZsTUh5vwnSxgadJ+zS/+NxNhConZgGlG6Q0TQi+LUxpcuK4RTJY925Dzly
+p4Touz7PPqwBLvCwFWSWS1wof/BZLObt5ybUSYGosxYUOMh2Z9zAghQRSUIzTCL+
+Hh4O5ow4wzK/5pYW43RLwAdeMiFHuPF4tZJPMBp2pBYtgTHuUtlvk5UUOrtCsuB/
+oyy+4HPEZcuuB7Y3W9ka9c5b0Sf7qCM4dPMhXDhfHq6hniXaUJ+LutIoawIDAQAB
+o4HzMIHwMAwGA1UdEwEB/wQCMAAwVQYDVR0fBE4wTDBKoEigRoZEaHR0cDovL29u
+c2l0ZWNybC50cnVzdHdpc2UuY29tL0NhYmluZXRPZmZpY2VJREFQVGVzdENBL0xh
+dGVzdENSTC5jcmwwDgYDVR0PAQH/BAQDAgeAMB0GA1UdDgQWBBQt8sf4FcAEZpgZ
+fAn8pid/9t2vIzAfBgNVHSMEGDAWgBRqEU1kUN/eY29XoYgf+AOVDiIEtDA5Bggr
+BgEFBQcBAQQtMCswKQYIKwYBBQUHMAGGHWh0dHA6Ly9zdGQtb2NzcC50cnVzdHdp
+c2UuY29tMA0GCSqGSIb3DQEBCwUAA4IBAQC4h8mFDuXx+rfYV1pSPaaQiDsKuMaf
+PL9DGfASeQGdX9SRmds9608Xa1x7566M7bE8rOcXr1Fy4JOXK0nXU2chnNCOSC5r
+GixTW9mb41cyarCOcck5PZHReqzyVvkjvPPp4RdArJuETdE/2tSUioAIz44IzhTy
+2yDrG39+T6w3GdrlcGsR5YMtNWwTgKLi35f7hTqtpPEkGMLL/0tFs8VxUAmuFPWG
+7XHBx/vrRibJ+JFarkzOjnGcV0juxnzqIhqDm4LTdpQCQDEwF9YHhkyix6G9yBXE
+FW9bhTfOi2NUx8Xeb2zXerc1ih2dzQbXWIVzADUrQtsOvKk+o8a5tno8
+</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://www.integration.signin.service.gov.uk:443/SAML2/SSO/EidasResponse/POST" index="1" isDefault="true" xsi:type="md:IndexedEndpointType"/>
+    </md:SPSSODescriptor>
+    <md:Organization xsi:type="md:OrganizationType">
+      <md:OrganizationName xml:lang="en-GB" xsi:type="md:localizedNameType">GOV.UK</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en-GB" xsi:type="md:localizedNameType">GOV.UK</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en-GB" xsi:type="md:localizedURIType">https://www.gov.uk</md:OrganizationURL>
+    </md:Organization>
+  </md:EntityDescriptor>
+</ser:MetadataList>

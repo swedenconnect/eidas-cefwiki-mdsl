@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="NL">
+  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://acc-eidas.minez.nl/EidasNodeC/ConnectorMetadata" validUntil="2020-02-14T15:08:35.679Z">
+    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:X509Data>
+        <ds:X509Certificate>MIIH0DCCBbigAwIBAgIUd+XAIABwgtZSZfdBvByFcxHGdfcwDQYJKoZIhvcNAQELBQAwgYQxCzAJ
+BgNVBAYTAk5MMSAwHgYDVQQKDBdRdW9WYWRpcyBUcnVzdGxpbmsgQi5WLjEXMBUGA1UEYQwOTlRS
+TkwtMzAyMzc0NTkxOjA4BgNVBAMMMVF1b1ZhZGlzIFBLSW92ZXJoZWlkIE9yZ2FuaXNhdGllIFNl
+cnZpY2VzIENBIC0gRzMwHhcNMTkxMDE1MTI1NzU4WhcNMjAxMDE1MTMwNzAwWjCB2TEdMBsGA1UE
+BRMUMDAwMDAwMDQwMDAwMDAxNDkwMDAxCzAJBgNVBAYTAk5MMR0wGwYDVQRhDBQwMDAwMDAwNDAw
+MDAwMDE0OTAwMDE0MDIGA1UECgwrTWluaXN0ZXJpZSB2YW4gRWNvbm9taXNjaGUgWmFrZW4gZW4g
+S2xpbWFhdDEeMBwGA1UECwwVRGllbnN0IElDVCBVaXR2b2VyaW5nMTYwNAYDVQQDDC1BQ0MtTkwt
+TWluRVpLLWVJREFTLVNBTUwtQ2xpZW50LVNpZ24ubWluZXoubmwwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQDc1RjH6deNWfu+x2RE+z9jHZ9T+rYdkjhV67wmRemOntax9yycdSEye5E0
+Zr/Lcl67ZSiN2GpMcpWrS7G1D2DHD4TQN3ig7EE8OuLfi0qdxigD/2r5OQlRmo35NB1BbSb+JWXP
+deplU3TBH8wL2cuh49esV5wONn5LX4DCFz3Qa24XuS3Vej4LR1O/C+lQ9TP7SYkTWrcJw4vbQQmA
+OKZv6LLvczlyHtV5I/NznxdGpAHXbeZpTilOTZIaYgso5ESEDf3P3XPix7FtkkzXpE5c8ORTYKs3
+P4jsnK5miX0Cfx1xbtA2/5+l6AvFxmznSnUNfFr8/T9E09Ys2/AJ5L1/AgMBAAGjggLhMIIC3TAf
+BgNVHSMEGDAWgBTK4ivslT5aoUiMx+S80lRsxutlLzB7BggrBgEFBQcBAQRvMG0wPAYIKwYBBQUH
+MAKGMGh0dHA6Ly90cnVzdC5xdW92YWRpc2dsb2JhbC5jb20vcGtpb3NlcnZpY2czLmNydDAtBggr
+BgEFBQcwAYYhaHR0cDovL3V3Lm9jc3AucXVvdmFkaXNnbG9iYWwuY29tMHgGA1UdEQRxMG+CLUFD
+Qy1OTC1NaW5FWkstZUlEQVMtU0FNTC1DbGllbnQtU2lnbi5taW5lei5ubKA+BgorBgEEAYI3FAID
+oDAMLjAwMDAwMDA0MDAwMDAwMTQ5MDAwQDIuMTYuNTI4LjEuMTAwMy4xLjMuNS4yLjEwggEyBgNV
+HSAEggEpMIIBJTCCASEGCmCEEAGHawECBQQwggERMDQGCCsGAQUFBwIBFihodHRwOi8vd3d3LnF1
+b3ZhZGlzZ2xvYmFsLmNvbS9yZXBvc2l0b3J5MIHYBggrBgEFBQcCAjCBywyByFJlbGlhbmNlIG9u
+IHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUg
+cmVsZXZhbnQgUXVvVmFkaXMgQ2VydGlmaWNhdGlvbiBQcmFjdGljZSBTdGF0ZW1lbnQgYW5kIG90
+aGVyIGRvY3VtZW50cyBpbiB0aGUgUXVvVmFkaXMgcmVwb3NpdG9yeSAgKGh0dHA6Ly93d3cucXVv
+dmFkaXNnbG9iYWwuY29tICkuMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA/BgNVHR8E
+ODA2MDSgMqAwhi5odHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9wa2lvc2VydmljZzMuY3Js
+MB0GA1UdDgQWBBQ5e/xN7utYZhyhWzZ13BhMCKiUATAOBgNVHQ8BAf8EBAMCB4AwDQYJKoZIhvcN
+AQELBQADggIBAHjQRWCVeBkrOg9Ko7Abe9el3BYnPlwt0FAYW9Omn8purzwH5HwzCsjxiSwKhPy4
+67iNEK8UygU/a06mynOpjqC/8cqEsYaBpxTZTCn7h62dW4pWyEXch4wo4ulCrNTVUDYwp1+9/C1E
+hzzdFgGv3P6Kiorx9n1AdHyt5V/ZPjZz3vMNtvploQw26q5bgkalUSQXzp4SiQG374SBDJN9MJRP
+zcox03dS0IhU281U9iAc47wX3dmv4A4bsozK+SIbyJnrDBgogd316aZaJOdeZjZgdtizqLLvXCCK
+P+2vCXftT5TMS1Av2iW/+GRfEx9XHe9ZEQicBI+s/3RC8sGIfDyNv7TngOx9LcmjMmUVa830PnBp
+a3viZAuBgbOtEg9zrs6UzamuBA+Tww3z9r6JD6xsLp1v5pQIiqkqxGn3rhUVo0pWPVYomjWojd8Y
+OFhTq2b9diVpED4bb6ch9zHJVT1k4E6CmnSOQHXVf45nCKSKMm8+9FRG0LkOEif8w/To1FRo+EPg
+yJk0O6ULKIkGfKfJC7P5XkjMVqowsVk8Y8Q/pUFw+q13WA7+cABU2KwPga/nCvSnxVFzRYBJGP6E
+OjVYtm7E0In02jFiZJ/+uZmLhkofGbbmGayk402l9d9DkpDia6UFL3fC07BVU0VyWDHHIPGpGb1t
+Pg46NefBE+9B</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+    <md:Extensions>
+      <eidas:SPType xmlns:eidas="http://eidas.europa.eu/saml-extensions">public</eidas:SPType>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"/>
+      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    </md:Extensions>
+    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+      <md:KeyDescriptor use="signing">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:X509Data>
+            <ds:X509Certificate>MIIH0DCCBbigAwIBAgIUd+XAIABwgtZSZfdBvByFcxHGdfcwDQYJKoZIhvcNAQELBQAwgYQxCzAJ
+BgNVBAYTAk5MMSAwHgYDVQQKDBdRdW9WYWRpcyBUcnVzdGxpbmsgQi5WLjEXMBUGA1UEYQwOTlRS
+TkwtMzAyMzc0NTkxOjA4BgNVBAMMMVF1b1ZhZGlzIFBLSW92ZXJoZWlkIE9yZ2FuaXNhdGllIFNl
+cnZpY2VzIENBIC0gRzMwHhcNMTkxMDE1MTI1NzU4WhcNMjAxMDE1MTMwNzAwWjCB2TEdMBsGA1UE
+BRMUMDAwMDAwMDQwMDAwMDAxNDkwMDAxCzAJBgNVBAYTAk5MMR0wGwYDVQRhDBQwMDAwMDAwNDAw
+MDAwMDE0OTAwMDE0MDIGA1UECgwrTWluaXN0ZXJpZSB2YW4gRWNvbm9taXNjaGUgWmFrZW4gZW4g
+S2xpbWFhdDEeMBwGA1UECwwVRGllbnN0IElDVCBVaXR2b2VyaW5nMTYwNAYDVQQDDC1BQ0MtTkwt
+TWluRVpLLWVJREFTLVNBTUwtQ2xpZW50LVNpZ24ubWluZXoubmwwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQDc1RjH6deNWfu+x2RE+z9jHZ9T+rYdkjhV67wmRemOntax9yycdSEye5E0
+Zr/Lcl67ZSiN2GpMcpWrS7G1D2DHD4TQN3ig7EE8OuLfi0qdxigD/2r5OQlRmo35NB1BbSb+JWXP
+deplU3TBH8wL2cuh49esV5wONn5LX4DCFz3Qa24XuS3Vej4LR1O/C+lQ9TP7SYkTWrcJw4vbQQmA
+OKZv6LLvczlyHtV5I/NznxdGpAHXbeZpTilOTZIaYgso5ESEDf3P3XPix7FtkkzXpE5c8ORTYKs3
+P4jsnK5miX0Cfx1xbtA2/5+l6AvFxmznSnUNfFr8/T9E09Ys2/AJ5L1/AgMBAAGjggLhMIIC3TAf
+BgNVHSMEGDAWgBTK4ivslT5aoUiMx+S80lRsxutlLzB7BggrBgEFBQcBAQRvMG0wPAYIKwYBBQUH
+MAKGMGh0dHA6Ly90cnVzdC5xdW92YWRpc2dsb2JhbC5jb20vcGtpb3NlcnZpY2czLmNydDAtBggr
+BgEFBQcwAYYhaHR0cDovL3V3Lm9jc3AucXVvdmFkaXNnbG9iYWwuY29tMHgGA1UdEQRxMG+CLUFD
+Qy1OTC1NaW5FWkstZUlEQVMtU0FNTC1DbGllbnQtU2lnbi5taW5lei5ubKA+BgorBgEEAYI3FAID
+oDAMLjAwMDAwMDA0MDAwMDAwMTQ5MDAwQDIuMTYuNTI4LjEuMTAwMy4xLjMuNS4yLjEwggEyBgNV
+HSAEggEpMIIBJTCCASEGCmCEEAGHawECBQQwggERMDQGCCsGAQUFBwIBFihodHRwOi8vd3d3LnF1
+b3ZhZGlzZ2xvYmFsLmNvbS9yZXBvc2l0b3J5MIHYBggrBgEFBQcCAjCBywyByFJlbGlhbmNlIG9u
+IHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUg
+cmVsZXZhbnQgUXVvVmFkaXMgQ2VydGlmaWNhdGlvbiBQcmFjdGljZSBTdGF0ZW1lbnQgYW5kIG90
+aGVyIGRvY3VtZW50cyBpbiB0aGUgUXVvVmFkaXMgcmVwb3NpdG9yeSAgKGh0dHA6Ly93d3cucXVv
+dmFkaXNnbG9iYWwuY29tICkuMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA/BgNVHR8E
+ODA2MDSgMqAwhi5odHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9wa2lvc2VydmljZzMuY3Js
+MB0GA1UdDgQWBBQ5e/xN7utYZhyhWzZ13BhMCKiUATAOBgNVHQ8BAf8EBAMCB4AwDQYJKoZIhvcN
+AQELBQADggIBAHjQRWCVeBkrOg9Ko7Abe9el3BYnPlwt0FAYW9Omn8purzwH5HwzCsjxiSwKhPy4
+67iNEK8UygU/a06mynOpjqC/8cqEsYaBpxTZTCn7h62dW4pWyEXch4wo4ulCrNTVUDYwp1+9/C1E
+hzzdFgGv3P6Kiorx9n1AdHyt5V/ZPjZz3vMNtvploQw26q5bgkalUSQXzp4SiQG374SBDJN9MJRP
+zcox03dS0IhU281U9iAc47wX3dmv4A4bsozK+SIbyJnrDBgogd316aZaJOdeZjZgdtizqLLvXCCK
+P+2vCXftT5TMS1Av2iW/+GRfEx9XHe9ZEQicBI+s/3RC8sGIfDyNv7TngOx9LcmjMmUVa830PnBp
+a3viZAuBgbOtEg9zrs6UzamuBA+Tww3z9r6JD6xsLp1v5pQIiqkqxGn3rhUVo0pWPVYomjWojd8Y
+OFhTq2b9diVpED4bb6ch9zHJVT1k4E6CmnSOQHXVf45nCKSKMm8+9FRG0LkOEif8w/To1FRo+EPg
+yJk0O6ULKIkGfKfJC7P5XkjMVqowsVk8Y8Q/pUFw+q13WA7+cABU2KwPga/nCvSnxVFzRYBJGP6E
+OjVYtm7E0In02jFiZJ/+uZmLhkofGbbmGayk402l9d9DkpDia6UFL3fC07BVU0VyWDHHIPGpGb1t
+Pg46NefBE+9B</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+      </md:KeyDescriptor>
+      <md:KeyDescriptor use="encryption">
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:X509Data>
+            <ds:X509Certificate>MIIH0DCCBbigAwIBAgIUTkDVa0MjAjaQI92E3V80yKOW6SswDQYJKoZIhvcNAQELBQAwgYQxCzAJ
+BgNVBAYTAk5MMSAwHgYDVQQKDBdRdW9WYWRpcyBUcnVzdGxpbmsgQi5WLjEXMBUGA1UEYQwOTlRS
+TkwtMzAyMzc0NTkxOjA4BgNVBAMMMVF1b1ZhZGlzIFBLSW92ZXJoZWlkIE9yZ2FuaXNhdGllIFNl
+cnZpY2VzIENBIC0gRzMwHhcNMTkxMDE1MTI1NzAwWhcNMjIxMDE1MTMwNzAwWjCB2DEdMBsGA1UE
+BRMUMDAwMDAwMDQwMDAwMDAxNDkwMDAxCzAJBgNVBAYTAk5MMR0wGwYDVQRhDBQwMDAwMDAwNDAw
+MDAwMDE0OTAwMDE0MDIGA1UECgwrTWluaXN0ZXJpZSB2YW4gRWNvbm9taXNjaGUgWmFrZW4gZW4g
+S2xpbWFhdDEeMBwGA1UECwwVRGllbnN0IElDVCBVaXR2b2VyaW5nMTUwMwYDVQQDDCxBQ0MtTkwt
+TWluRVpLLWVJREFTLVNBTUwtQ2xpZW50LUVuYy5taW5lei5ubDCCASIwDQYJKoZIhvcNAQEBBQAD
+ggEPADCCAQoCggEBALFb8TXuEpmT7IsueRQdx7kbXFsH3UVUm41b36t5JdzlKsCZYMqqf5cfqlwH
+kYOxUCEcU/H7FxO3l2Lwt9dmB79cFsemgvTRqq7hqeboA7H68S+Zl5liBOqqkphsZarIaM2z3u9E
+KKPQnvaSHPTfOaAUnx52PBhrBhCwgKDwHH6BEWYvGEUgz2hE+jcpgKmyQqdGudrJFxIsZjcys6SQ
+RcKEkAv+oblNFeKm316D3TIFClS20kS92kESHV7DVJEBigYAFKF0CjIfs+MKlcZ4nrpXrdks6tGV
+aT7UBu5ctCDGsi85XYt3Qy5Tan2z6KizwTAsMn97eJEJUv9l3eotEYECAwEAAaOCAuIwggLeMB8G
+A1UdIwQYMBaAFMriK+yVPlqhSIzH5LzSVGzG62UvMHsGCCsGAQUFBwEBBG8wbTA8BggrBgEFBQcw
+AoYwaHR0cDovL3RydXN0LnF1b3ZhZGlzZ2xvYmFsLmNvbS9wa2lvc2VydmljZzMuY3J0MC0GCCsG
+AQUFBzABhiFodHRwOi8vdXcub2NzcC5xdW92YWRpc2dsb2JhbC5jb20wdwYDVR0RBHAwboIsQUND
+LU5MLU1pbkVaSy1lSURBUy1TQU1MLUNsaWVudC1FbmMubWluZXoubmygPgYKKwYBBAGCNxQCA6Aw
+DC4wMDAwMDAwNDAwMDAwMDE0OTAwMEAyLjE2LjUyOC4xLjEwMDMuMS4zLjUuMi4xMIIBMgYDVR0g
+BIIBKTCCASUwggEhBgpghBABh2sBAgUFMIIBETA0BggrBgEFBQcCARYoaHR0cDovL3d3dy5xdW92
+YWRpc2dsb2JhbC5jb20vcmVwb3NpdG9yeTCB2AYIKwYBBQUHAgIwgcsMgchSZWxpYW5jZSBvbiB0
+aGlzIGNlcnRpZmljYXRlIGJ5IGFueSBwYXJ0eSBhc3N1bWVzIGFjY2VwdGFuY2Ugb2YgdGhlIHJl
+bGV2YW50IFF1b1ZhZGlzIENlcnRpZmljYXRpb24gUHJhY3RpY2UgU3RhdGVtZW50IGFuZCBvdGhl
+ciBkb2N1bWVudHMgaW4gdGhlIFF1b1ZhZGlzIHJlcG9zaXRvcnkgIChodHRwOi8vd3d3LnF1b3Zh
+ZGlzZ2xvYmFsLmNvbSApLjAfBgNVHSUEGDAWBggrBgEFBQcDBAYKKwYBBAGCNwoDBDA/BgNVHR8E
+ODA2MDSgMqAwhi5odHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9wa2lvc2VydmljZzMuY3Js
+MB0GA1UdDgQWBBROdPTsERXsO4YLAf30O2SqyJBHKzAOBgNVHQ8BAf8EBAMCBDAwDQYJKoZIhvcN
+AQELBQADggIBAJ2BUh0Zb8BFL5TLY+09P0aDq3x5i1KwewfvKnoksJbE3w/x9br4L2A+/UoCVVYn
+uSw4tzShBEupbyTRp0KxbxHXNraNekECfqZenThLcJR55d6ToY0qpDRrAz6iIXcPlkkYGzFXghjM
+2s/C05tIrq5DvjNPZcSjg/2Bx+iJZ+OM4CsQ0OmmRKy3WqDpFQUoHcVSCq2e6V7ruKZ39fwwgu0U
+8FbeuzDwL0qsltp3XXYugPUCLv+836dN/B9EEGZlLaLsKboNWgWoi8x2FcGZXFj1y5ll40XR1wS5
+53r7Hdq1bgFYSUyBoVJmChf6thxMgwETRxn3V9TqRbvizXAuFJVufBCgGgtm2t1dLRs56uiY4JFy
+qi+sTjU56/muTU3PC5SjSV5HgzwZXTCgSRXPVosnlDe3egHUAODWapmH/MRGmn13JepldLbsA6pI
+OsBooVuPOkrXEhAYpwwZ4vsAV20iLo2f7l8Oe0kRnjtKWSEJzlzOGoS8pVV2lFL3x8Z6oBCGaIrq
+WPTkidTAaOwg6ir8ug+ghw+DXQmZMuAdQ20qgS9EJVrL6hbSY+NJqmP9IcSJ/3oqnE6JugYqBEfk
+pgIHEYcS4Hm964MJL0mXz/Io5k4hTj06XzadfcT62EjR1yVobDo4DuSPL3SNgJCDTxb9KWodS25i
++czZW4agZdLI</ds:X509Certificate>
+          </ds:X509Data>
+        </ds:KeyInfo>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      </md:KeyDescriptor>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://acc-eidas.minez.nl/EidasNodeC/ColleagueResponse" index="0" isDefault="true"/>
+      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://acc-eidas.minez.nl/EidasNodeC/ColleagueResponse" index="1"/>
+    </md:SPSSODescriptor>
+    <md:Organization>
+      <md:OrganizationName xml:lang="en">Ministerie van Economische Zaken en Klimaat (EZK)</md:OrganizationName>
+      <md:OrganizationDisplayName xml:lang="en">Dictu eIDAS Connector (Acceptance)</md:OrganizationDisplayName>
+      <md:OrganizationURL xml:lang="en">https://dictu.nl/</md:OrganizationURL>
+    </md:Organization>
+    <md:ContactPerson contactType="support">
+      <md:Company>eIDAS Connector Operator</md:Company>
+      <md:GivenName>eIDAS</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>eIDAS-support@dictu.nl</md:EmailAddress>
+    </md:ContactPerson>
+    <md:ContactPerson contactType="technical">
+      <md:Company>eIDAS Connector Operator</md:Company>
+      <md:GivenName>eIDAS</md:GivenName>
+      <md:SurName>Support</md:SurName>
+      <md:EmailAddress>eIDAS-support@dictu.nl</md:EmailAddress>
+    </md:ContactPerson>
+  </md:EntityDescriptor>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://acc-eidas.minez.nl/EidasNodeP/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://acc-eidas.minez.nl/EidasNodeP/ServiceMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIH0DCCBbigAwIBAgIUd+XAIABwgtZSZfdBvByFcxHGdfcwDQYJKoZIhvcNAQELBQAwgYQxCzAJ
+BgNVBAYTAk5MMSAwHgYDVQQKDBdRdW9WYWRpcyBUcnVzdGxpbmsgQi5WLjEXMBUGA1UEYQwOTlRS
+TkwtMzAyMzc0NTkxOjA4BgNVBAMMMVF1b1ZhZGlzIFBLSW92ZXJoZWlkIE9yZ2FuaXNhdGllIFNl
+cnZpY2VzIENBIC0gRzMwHhcNMTkxMDE1MTI1NzU4WhcNMjAxMDE1MTMwNzAwWjCB2TEdMBsGA1UE
+BRMUMDAwMDAwMDQwMDAwMDAxNDkwMDAxCzAJBgNVBAYTAk5MMR0wGwYDVQRhDBQwMDAwMDAwNDAw
+MDAwMDE0OTAwMDE0MDIGA1UECgwrTWluaXN0ZXJpZSB2YW4gRWNvbm9taXNjaGUgWmFrZW4gZW4g
+S2xpbWFhdDEeMBwGA1UECwwVRGllbnN0IElDVCBVaXR2b2VyaW5nMTYwNAYDVQQDDC1BQ0MtTkwt
+TWluRVpLLWVJREFTLVNBTUwtQ2xpZW50LVNpZ24ubWluZXoubmwwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQDc1RjH6deNWfu+x2RE+z9jHZ9T+rYdkjhV67wmRemOntax9yycdSEye5E0
+Zr/Lcl67ZSiN2GpMcpWrS7G1D2DHD4TQN3ig7EE8OuLfi0qdxigD/2r5OQlRmo35NB1BbSb+JWXP
+deplU3TBH8wL2cuh49esV5wONn5LX4DCFz3Qa24XuS3Vej4LR1O/C+lQ9TP7SYkTWrcJw4vbQQmA
+OKZv6LLvczlyHtV5I/NznxdGpAHXbeZpTilOTZIaYgso5ESEDf3P3XPix7FtkkzXpE5c8ORTYKs3
+P4jsnK5miX0Cfx1xbtA2/5+l6AvFxmznSnUNfFr8/T9E09Ys2/AJ5L1/AgMBAAGjggLhMIIC3TAf
+BgNVHSMEGDAWgBTK4ivslT5aoUiMx+S80lRsxutlLzB7BggrBgEFBQcBAQRvMG0wPAYIKwYBBQUH
+MAKGMGh0dHA6Ly90cnVzdC5xdW92YWRpc2dsb2JhbC5jb20vcGtpb3NlcnZpY2czLmNydDAtBggr
+BgEFBQcwAYYhaHR0cDovL3V3Lm9jc3AucXVvdmFkaXNnbG9iYWwuY29tMHgGA1UdEQRxMG+CLUFD
+Qy1OTC1NaW5FWkstZUlEQVMtU0FNTC1DbGllbnQtU2lnbi5taW5lei5ubKA+BgorBgEEAYI3FAID
+oDAMLjAwMDAwMDA0MDAwMDAwMTQ5MDAwQDIuMTYuNTI4LjEuMTAwMy4xLjMuNS4yLjEwggEyBgNV
+HSAEggEpMIIBJTCCASEGCmCEEAGHawECBQQwggERMDQGCCsGAQUFBwIBFihodHRwOi8vd3d3LnF1
+b3ZhZGlzZ2xvYmFsLmNvbS9yZXBvc2l0b3J5MIHYBggrBgEFBQcCAjCBywyByFJlbGlhbmNlIG9u
+IHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUg
+cmVsZXZhbnQgUXVvVmFkaXMgQ2VydGlmaWNhdGlvbiBQcmFjdGljZSBTdGF0ZW1lbnQgYW5kIG90
+aGVyIGRvY3VtZW50cyBpbiB0aGUgUXVvVmFkaXMgcmVwb3NpdG9yeSAgKGh0dHA6Ly93d3cucXVv
+dmFkaXNnbG9iYWwuY29tICkuMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDA/BgNVHR8E
+ODA2MDSgMqAwhi5odHRwOi8vY3JsLnF1b3ZhZGlzZ2xvYmFsLmNvbS9wa2lvc2VydmljZzMuY3Js
+MB0GA1UdDgQWBBQ5e/xN7utYZhyhWzZ13BhMCKiUATAOBgNVHQ8BAf8EBAMCB4AwDQYJKoZIhvcN
+AQELBQADggIBAHjQRWCVeBkrOg9Ko7Abe9el3BYnPlwt0FAYW9Omn8purzwH5HwzCsjxiSwKhPy4
+67iNEK8UygU/a06mynOpjqC/8cqEsYaBpxTZTCn7h62dW4pWyEXch4wo4ulCrNTVUDYwp1+9/C1E
+hzzdFgGv3P6Kiorx9n1AdHyt5V/ZPjZz3vMNtvploQw26q5bgkalUSQXzp4SiQG374SBDJN9MJRP
+zcox03dS0IhU281U9iAc47wX3dmv4A4bsozK+SIbyJnrDBgogd316aZaJOdeZjZgdtizqLLvXCCK
+P+2vCXftT5TMS1Av2iW/+GRfEx9XHe9ZEQicBI+s/3RC8sGIfDyNv7TngOx9LcmjMmUVa830PnBp
+a3viZAuBgbOtEg9zrs6UzamuBA+Tww3z9r6JD6xsLp1v5pQIiqkqxGn3rhUVo0pWPVYomjWojd8Y
+OFhTq2b9diVpED4bb6ch9zHJVT1k4E6CmnSOQHXVf45nCKSKMm8+9FRG0LkOEif8w/To1FRo+EPg
+yJk0O6ULKIkGfKfJC7P5XkjMVqowsVk8Y8Q/pUFw+q13WA7+cABU2KwPga/nCvSnxVFzRYBJGP6E
+OjVYtm7E0In02jFiZJ/+uZmLhkofGbbmGayk402l9d9DkpDia6UFL3fC07BVU0VyWDHHIPGpGb1t
+Pg46NefBE+9B</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+</ser:MetadataList>
