@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="PL">
-  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://test.eidas.gov.pl/EidasNode/ConnectorMetadata" validUntil="2022-11-09T15:08:38.431Z">
-    <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://test.eidas.gov.pl/EidasNode/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://test.eidas.gov.pl/EidasNode/ConnectorMetadata" HideFromDiscovery="true"/>
+    <ds:KeyInfo>
       <ds:X509Data>
         <ds:X509Certificate>MIIBYzCCAQmgAwIBAgIEV9+OojAKBggqhkjOPQQDAjAuMQswCQYDVQQGEwJQTDENMAsGA1UECgwE
 TkFTSzEQMA4GA1UEAwwHdGVzdC1jYTAeFw0xNjA5MzAwNTMxMDdaFw0yMTA5MzAwNTMxMDdaMEUx
@@ -12,85 +13,9 @@ A0gAMEUCIQDhVsJmSAvWz6Gxsfodf58wUNRL1GkEhlo2UaU7UljZBQIgPuTe0JGcdNgMP9IRJhdl
 It8aiNtHvV46Mbp6vAL7hp0=</ds:X509Certificate>
       </ds:X509Data>
     </ds:KeyInfo>
-    <md:Extensions>
-      <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
-        <saml2:Attribute Name="http://eidas.europa.eu/entity-attributes/protocol-version" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">1.1</saml2:AttributeValue>
-        </saml2:Attribute>
-        <saml2:Attribute Name="http://eidas.europa.eu/entity-attributes/application-identifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
-          <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">CEF:eIDAS-ref:2.3.1</saml2:AttributeValue>
-        </saml2:Attribute>
-      </mdattr:EntityAttributes>
-      <eidas:SPType xmlns:eidas="http://eidas.europa.eu/saml-extensions">public</eidas:SPType>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"/>
-      <alg:DigestMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"/>
-      <alg:SigningMethod xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
-    </md:Extensions>
-    <md:SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-      <md:KeyDescriptor use="signing">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>MIIBYTCCAQagAwIBAgIEV9+OMjAKBggqhkjOPQQDAjAuMQswCQYDVQQGEwJQTDENMAsGA1UECgwE
-TkFTSzEQMA4GA1UEAwwHdGVzdC1jYTAeFw0xNjA5MzAwNTMwMDlaFw0yMTA5MzAwNTMwMDlaMEIx
-CzAJBgNVBAYTAlBMMSAwHgYDVQQKDBdNaW5pc3RlcnN0d28gQ3lmcnl6YWNqaTERMA8GA1UEAwwI
-c3BlcHMtcGwwWTATBgcqhkjOPQIBBggqhkjOPQMBBwNCAATsvaQchzm9Ih8++gCAM+z3nKKwKl3o
-UXjQWBbGg8+4qRaS+Pn3mzntxGhPCGuFzQsabRa5lYRU47asOMgoFFWFMAoGCCqGSM49BAMCA0kA
-MEYCIQDl0O+dPSO6L5hoB+IRFhoGh5CGTAIKWGl42i9YhviAJgIhANV8fAlH6ZZcX3uDbtc8a7IS
-i9eEnhVGXrsfG3sxsZ9f</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-      </md:KeyDescriptor>
-      <md:KeyDescriptor use="encryption">
-        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-          <ds:X509Data>
-            <ds:X509Certificate>MIICrzCCAlagAwIBAgIEV9+OwDAKBggqhkjOPQQDAjAuMQswCQYDVQQGEwJQTDENMAsGA1UECgwE
-TkFTSzEQMA4GA1UEAwwHdGVzdC1jYTAeFw0xNjA5MzAwNTMzNDNaFw0yMTA5MzAwNTMzNDNaMEcx
-CzAJBgNVBAYTAlBMMSAwHgYDVQQKDBdNaW5pc3RlcnN0d28gQ3lmcnl6YWNqaTEWMBQGA1UEAwwN
-ZW5jcnlwdGlvbi1wbDCCAaIwDQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAMVy3vmhaxD5k41y
-Ui1kNH5BxWcTc+oYdmrSaRor1293np5eplNM9FuwMDg9Ev7GlQrjW8IAErIlvGlYd/8xrRDvzdip
-SX178VOayEIapg3nbSpEcu52h8i/ZzGDgNRbXcrEl4G/tM7+ZFnaDRdJthM8o2kpFG7huck1UdlB
-4bpWRR/ydjh1zDY0GjrCXmxJ1jIaVJgCh65MV+bUdwnt7qHEDFjMXphqhWZmAcm6aMTLYqvtHcAB
-7XlZiL8Qv4A0k4uFCXeVf9XOFHp9hJlcbcSKMZIJGs67kjx5nIS31damM+KrA6zlNZUuFXmLXmWC
-hMkKoXEtd0Xog6bALJnlwFtfCKMiis14NBRSUxB8v9VgZWI/W8uQ0Ou73foIW8Y2rjB57Vky+++k
-O9zSHNMAZYQQ/8GWKhTs22o3YfrEAC6wZCan6IQFm6fCpAAJa3yNd08yOzS2sqlM663goER+ht1l
-J0Sxx6Kp/PmVqM5J0CCJ3rd5z2026tewPGLCTKo7ZQIDAQABMAoGCCqGSM49BAMCA0cAMEQCIEXF
-+PHLUWC5P56MHwGZ3XBhUYPAZ/KeO1lj/gPWfxMcAiAdAGwwUbLcS769ZUn5C9B+A6MZzmRwjxXP
-yKHONVcgRw==</ds:X509Certificate>
-          </ds:X509Data>
-        </ds:KeyInfo>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
-        <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
-      </md:KeyDescriptor>
-      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
-      <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-      <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://test.eidas.gov.pl/EidasNode/ColleagueResponse" index="0" isDefault="true"/>
-      <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://test.eidas.gov.pl/EidasNode/ColleagueResponse" index="1"/>
-    </md:SPSSODescriptor>
-    <md:Organization>
-      <md:OrganizationName xml:lang="en"/>
-      <md:OrganizationDisplayName xml:lang="en"/>
-      <md:OrganizationURL xml:lang="en"/>
-    </md:Organization>
-    <md:ContactPerson contactType="support"/>
-    <md:ContactPerson contactType="technical"/>
-  </md:EntityDescriptor>
+  </ser:MetadataLocation>
   <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://test.eidas.gov.pl/EidasNode/ServiceMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://test.eidas.gov.pl/EidasNode/ServiceMetadata"/>
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://test.eidas.gov.pl/EidasNode/ServiceMetadata" HideFromDiscovery="true"/>
     <ds:KeyInfo>
       <ds:X509Data>
         <ds:X509Certificate>MIIBYzCCAQmgAwIBAgIEV9+OojAKBggqhkjOPQQDAjAuMQswCQYDVQQGEwJQTDENMAsGA1UECgwE

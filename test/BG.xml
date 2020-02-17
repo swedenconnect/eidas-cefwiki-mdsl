@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="BG">
-  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://eidas-test.egov.bg/EidasNode/ConnectorMetadata" validUntil="2020-02-14T15:07:38.546Z">
+  <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="http://eidas-test.egov.bg/EidasNode/ConnectorMetadata" validUntil="2020-02-18T08:04:55.237Z">
     <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
       <ds:X509Data>
         <ds:X509Certificate>MIIF9DCCA9ygAwIBAgICIBcwDQYJKoZIhvcNAQELBQAwgZIxCzAJBgNVBAYTAkJHMRMwEQYDVQQI
