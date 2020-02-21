@@ -4,6 +4,11 @@ COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LV LT LU MT NL NO PL PT 
 
 .PHONY: update $(COUNTRIES) prod.xml test.xml
 
+all: update
+
+docker:
+	@docker build -t eidas-cefwiki-mdsl .
+
 update: $(COUNTRIES) prod.xml test.xml
 
 prod.xml: 
