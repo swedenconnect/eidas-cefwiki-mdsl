@@ -2,9 +2,14 @@ MDSL:=./scripts/build-mdsl-entry.sh
 
 COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LV LT LU MT NL NO PL PT SK SI ES SE UK
 
-.PHONY: update $(COUNTRIES)
+.PHONY: update $(COUNTRIES) prod.xml test.xml
 
-update: $(COUNTRIES)
+update: $(COUNTRIES) prod.xml test.xml
+
+prod.xml: 
+	@./scripts/build-mdsl.sh prod > $@
+test.xml:
+	@./scripts/build-mdsl.sh test > $@
 
 AT:
 	$(MDSL) -t AT -c https://eidas.bmi.gv.at/EidasNode/ConnectorMetadata > prod/AT.xml
@@ -31,8 +36,8 @@ CY:
 	$(MDSL) -t CY -p https://pre-eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://pre-eidas.mof.gov.cy/EidasNode/ConnectorMetadata > test/CY.xml
 
 DK:
-	$(MDSL) -t DK -c https://eidasconnector.eid.digst.dk/metadata > prod/DK.xml
-	$(MDSL) -t DK -p https://eidasservice.test.eid.digst.dk/metadata -c https://eidasconnector.test.eid.digst.dk/idp > test/DK.xml
+	$(MDSL) -t DK -c https://eidasconnector.eid.digst.dk/Metadata > prod/DK.xml
+	$(MDSL) -t DK -p https://eidasservice.test.eid.digst.dk/Metadata -c https://eidasconnector.test.eid.digst.dk/idp > test/DK.xml
 
 EE:
 	$(MDSL) -t EE -p https://eidas.ria.ee/EidasNode/ServiceMetadata -c https://eidas.ria.ee/EidasNode/ConnectorMetadata > prod/EE.xml

@@ -74,41 +74,55 @@ cat>$s<<EOF
               <xsl:attribute name="HideFromDiscovery"><xsl:value-of select="\$hidden"/></xsl:attribute>
            </xsl:if>
         </ser:Endpoint>
-        <xsl:apply-templates select="ds:Signature"/>
+        <xsl:apply-templates/>
      </ser:MetadataLocation>
   </xsl:template>
 
-  <xsl:template match="md:EntityDescriptor[@entityID='$proxy']">
-     <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/ProxyService</xsl:with-param></xsl:call-template>
-  </xsl:template>
-
-  <xsl:template match="md:EntityDescriptor[@entityID='$connector']">
-     <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/Connector</xsl:with-param></xsl:call-template>
+  <xsl:template match="ser:MetadataList">
+     <xsl:copy><xsl:copy-of select="@*"/><xsl:apply-templates/></xsl:copy>
   </xsl:template>
 
   <xsl:template match="ds:Signature">
-     <xsl:apply-templates select="ds:KeyInfo"/>
+    <xsl:apply-templates select="ds:KeyInfo"/>
   </xsl:template>
 
   <xsl:template match="ds:KeyInfo">
-     <xsl:copy>
-        <xsl:apply-templates/>
-     </xsl:copy>
+    <xsl:copy><xsl:apply-templates select="ds:X509Data"/></xsl:copy>
   </xsl:template>
 
-  <xsl:template match="text()|comment()|@*">
-    <xsl:copy/>
+  <xsl:template match="ds:X509Data">
+    <xsl:copy><xsl:apply-templates select="ds:X509Certificate"/></xsl:copy>
   </xsl:template>
 
-  <xsl:template match="*">
-    <xsl:copy>
-      <xsl:apply-templates select="node()|@*"/>
-    </xsl:copy>
+  <xsl:template match="ds:X509Certificate">
+    <xsl:copy><xsl:copy-of select="text()"/></xsl:copy>
   </xsl:template>
 
+EOF
+
+if [ "x$proxy" != "x" ]; then
+cat>>$s<<EOF
+  <xsl:template match="md:EntityDescriptor[@entityID='$proxy']">
+     <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/ProxyService</xsl:with-param></xsl:call-template>
+  </xsl:template>
+EOF
+fi
+
+if [ "x$connector" != "x" ]; then
+cat>>$s<<EOF
+  <xsl:template match="md:EntityDescriptor[@entityID='$connector']">
+     <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/Connector</xsl:with-param></xsl:call-template>
+  </xsl:template>
+EOF
+fi
+
+cat>>$s<<EOF
+  <xsl:template match="@*"><xsl:copy/></xsl:template>
+  <xsl:template match="*"></xsl:template>
 </xsl:stylesheet>
 EOF
 
-xsltproc --stringparam hidden $hidden --xinclude $s $x | xmllint --format -
+xsltproc --stringparam hidden $hidden --xinclude $s $x | xmllint --format --nsclean -
+
 
 rm -f $x $s $c_xml $p_xml
