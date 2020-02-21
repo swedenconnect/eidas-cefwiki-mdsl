@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="IT">
   <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata" HideFromDiscovery="true"/>
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata"/>
     <ds:KeyInfo>
       <ds:X509Data>
         <ds:X509Certificate>MIIECjCCAvKgAwIBAgIJAN3SD57IEWotMA0GCSqGSIb3DQEBCwUAMIG0MQswCQYDVQQGEwJJVDEt

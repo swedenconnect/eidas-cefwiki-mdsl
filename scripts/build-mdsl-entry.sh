@@ -70,7 +70,9 @@ cat>$s<<EOF
         <ser:Endpoint>
            <xsl:attribute name="EndpointType"><xsl:value-of select="\$type"/></xsl:attribute>
            <xsl:attribute name="EntityID"><xsl:value-of select="@entityID"/></xsl:attribute>
-           <xsl:attribute name="HideFromDiscovery"><xsl:value-of select="\$hidden"/></xsl:attribute>
+           <xsl:if test="\$type = 'http://eidas.europa.eu/metadata/ept/ProxyService'">
+              <xsl:attribute name="HideFromDiscovery"><xsl:value-of select="\$hidden"/></xsl:attribute>
+           </xsl:if>
         </ser:Endpoint>
         <xsl:apply-templates select="ds:Signature"/>
      </ser:MetadataLocation>
