@@ -24,4 +24,4 @@ cat<<EOF
    </ser:DistributionPoints>
 </ser:MetadataServiceList>
 EOF
-) | xmllint --format --xinclude --schema schema/MDServiceList_final.xsd -
+) | xmllint --format --xinclude --nsclean --schema schema/MDServiceList_final.xsd -
