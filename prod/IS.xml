@@ -25,7 +25,7 @@ ns6eHMRw1EDGYCBIuiYt051eH5zkR8TLU3jZVYJXqVV7Sjufg0ohKf7/eSZR6XDnB5NVL7wD+mAC
     </ds:KeyInfo>
   </ser:MetadataLocation>
   <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://node.island.is/eidas-node/ServiceMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://node.island.is/eidas-node/ServiceMetadata" HideFromDiscovery="true"/>
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://node.island.is/eidas-node/ServiceMetadata" HideFromDiscovery="false"/>
     <ds:KeyInfo>
       <ds:X509Data>
         <ds:X509Certificate>MIIF8zCCBNugAwIBAgIDGykVMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAklTMRMwEQYDVQQF
