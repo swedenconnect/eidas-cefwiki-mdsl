@@ -1564,54 +1564,6 @@ at2peximTRWLRQ==</ds:X509Certificate>
   </ser:MetadataList>
 
 
-  <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="SK" xml:base="test/SK-1.xml">
-    <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="http://eidas.ana.sk/EidasNode/ConnectorMetadata">
-      <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="http://eidas.ana.sk/EidasNode/ConnectorMetadata"/>
-      <ds:KeyInfo>
-        <ds:X509Data>
-          <ds:X509Certificate>MIIDTDCCAjSgAwIBAgIQBHFqE6MNz7pFXb9Z3FPhtzANBgkqhkiG9w0BAQ0FADAoMSYwJAYDVQQD
-Ex1tZXRhZGF0YS5laWRhcy5kZXYuYW5hc29mdC5zazAeFw0xNjA4MTYwNzEzMjNaFw0zOTEyMzEy
-MzU5NTlaMCgxJjAkBgNVBAMTHW1ldGFkYXRhLmVpZGFzLmRldi5hbmFzb2Z0LnNrMIIBIjANBgkq
-hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroDD460rcEdDi7ArbawAUP2yMB/au0bBo1K6HDRWnrL4
-svcQvEtKpFO0ANiZSNRuksqrzy0wLgP+o02lddNUgVzp/3MSdlOL6JrXZ05NI3RHcNA48hvwAXhW
-9bq0ZoMAfvfryya7Lm1k2/TkUP6xp0XZxm78LJ/ZY9eO9ciWUWuMzv5V4Lrog2AOlqv+3jLelyT2
-fX10rZ8lih6IUArc++r1PzMxVgXYUlJL56JRLO6QqJLcODgkjK9ya30QkAb6AJUkHKucF4Qz9vkj
-he92DUHf8nRMW3eZaofNYJT/D2lOdoO8hxcJf8HEhsMfotey2S2UYUkt/h14yrg4au4+iQIDAQAB
-o3IwcDATBgNVHSUEDDAKBggrBgEFBQcDATBZBgNVHQEEUjBQgBA0G3kIvje0C8q1TpK31Da1oSow
-KDEmMCQGA1UEAxMdbWV0YWRhdGEuZWlkYXMuZGV2LmFuYXNvZnQuc2uCEARxahOjDc+6RV2/WdxT
-4bcwDQYJKoZIhvcNAQENBQADggEBAE3BO4oq57Ekkq9fRxc9pyhUn91zCBfEiiyYRRaG6oeq+AMO
-Fw6JlGeq/hQPLnuRiZGBXgX+o6G+ihqQ8K9b080XIE0ibzGZSRO9Pev6tPiYjqG/GQr00TwgjEcP
-oq2DHWwtOhyip1OnPYFKiCUtd0NquUWuQE9Dr59aIoNmovzwXYL2Sn+y2IfaeVdIKrAgp4M6Q91v
-g7P3cKYe50j/23wmu0gfwiV0xOEvPskl7SNHnBGBaoZWKo7Q+CQWPx9lKLZF7s6VgIKpHWEqM+OG
-l7hQZ8Pi08rJS2+D+B+z0oiJ2llzBM5tatTZ19X4ZFyNcLnAVnxIFenBColMAw9pqSI=</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </ser:MetadataLocation>
-    <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="http://eidas.ana.sk/EidasNode/ServiceMetadata">
-      <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="http://eidas.ana.sk/EidasNode/ServiceMetadata"/>
-      <ds:KeyInfo>
-        <ds:X509Data>
-          <ds:X509Certificate>MIIDTDCCAjSgAwIBAgIQBHFqE6MNz7pFXb9Z3FPhtzANBgkqhkiG9w0BAQ0FADAoMSYwJAYDVQQD
-Ex1tZXRhZGF0YS5laWRhcy5kZXYuYW5hc29mdC5zazAeFw0xNjA4MTYwNzEzMjNaFw0zOTEyMzEy
-MzU5NTlaMCgxJjAkBgNVBAMTHW1ldGFkYXRhLmVpZGFzLmRldi5hbmFzb2Z0LnNrMIIBIjANBgkq
-hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroDD460rcEdDi7ArbawAUP2yMB/au0bBo1K6HDRWnrL4
-svcQvEtKpFO0ANiZSNRuksqrzy0wLgP+o02lddNUgVzp/3MSdlOL6JrXZ05NI3RHcNA48hvwAXhW
-9bq0ZoMAfvfryya7Lm1k2/TkUP6xp0XZxm78LJ/ZY9eO9ciWUWuMzv5V4Lrog2AOlqv+3jLelyT2
-fX10rZ8lih6IUArc++r1PzMxVgXYUlJL56JRLO6QqJLcODgkjK9ya30QkAb6AJUkHKucF4Qz9vkj
-he92DUHf8nRMW3eZaofNYJT/D2lOdoO8hxcJf8HEhsMfotey2S2UYUkt/h14yrg4au4+iQIDAQAB
-o3IwcDATBgNVHSUEDDAKBggrBgEFBQcDATBZBgNVHQEEUjBQgBA0G3kIvje0C8q1TpK31Da1oSow
-KDEmMCQGA1UEAxMdbWV0YWRhdGEuZWlkYXMuZGV2LmFuYXNvZnQuc2uCEARxahOjDc+6RV2/WdxT
-4bcwDQYJKoZIhvcNAQENBQADggEBAE3BO4oq57Ekkq9fRxc9pyhUn91zCBfEiiyYRRaG6oeq+AMO
-Fw6JlGeq/hQPLnuRiZGBXgX+o6G+ihqQ8K9b080XIE0ibzGZSRO9Pev6tPiYjqG/GQr00TwgjEcP
-oq2DHWwtOhyip1OnPYFKiCUtd0NquUWuQE9Dr59aIoNmovzwXYL2Sn+y2IfaeVdIKrAgp4M6Q91v
-g7P3cKYe50j/23wmu0gfwiV0xOEvPskl7SNHnBGBaoZWKo7Q+CQWPx9lKLZF7s6VgIKpHWEqM+OG
-l7hQZ8Pi08rJS2+D+B+z0oiJ2llzBM5tatTZ19X4ZFyNcLnAVnxIFenBColMAw9pqSI=</ds:X509Certificate>
-        </ds:X509Data>
-      </ds:KeyInfo>
-    </ser:MetadataLocation>
-  </ser:MetadataList>
-
-
   <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="SK" xml:base="test/SK.xml">
 </ser:MetadataList>
 
