@@ -15,7 +15,7 @@ It8aiNtHvV46Mbp6vAL7hp0=</ds:X509Certificate>
     </ds:KeyInfo>
   </ser:MetadataLocation>
   <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://test.eidas.gov.pl/EidasNode/ServiceMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://test.eidas.gov.pl/EidasNode/ServiceMetadata" HideFromDiscovery="true"/>
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://test.eidas.gov.pl/EidasNode/ServiceMetadata" HideFromDiscovery="false"/>
     <ds:KeyInfo>
       <ds:X509Data>
         <ds:X509Certificate>MIIBYzCCAQmgAwIBAgIEV9+OojAKBggqhkjOPQQDAjAuMQswCQYDVQQGEwJQTDENMAsGA1UECgwE

@@ -1,6 +1,6 @@
-MDSL:=./scripts/build-mdsl-entry.sh
+MDSL:=./scripts/build-mdsl-entry.sh -v
 
-COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LV LT LU MT NL NO PL PT SK SI ES SE UK
+COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LV LT LU MT NL NO PL PT SK SI ES SE GB
 
 .PHONY: update $(COUNTRIES) prod.xml test.xml
 
@@ -122,9 +122,6 @@ SE:
 	$(MDSL) -t SE -p https://proxy.eidas.swedenconnect.se/eidas-ps/ServiceMetadata -c https://connector.eidas.swedenconnect.se/idp/metadata/sp > prod/SE.xml
 	$(MDSL) -t SE -p https://qa.proxy.eidas.swedenconnect.se/eidas-ps/ServiceMetadata -c https://qa.connector.eidas.swedenconnect.se/idp/metadata/sp > test/SE.xml
 
-UK:
-	$(MDSL) -t UK -c https://www.signin.service.gov.uk/SAML2/metadata/connector > prod/UK.xml
-	$(MDSL) -t UK -c https://www.integration.signin.service.gov.uk/SAML2/metadata/connector > test/UK.xml
-
-test:
-	$(MDSL) -t UK -c https://www.integration.signin.service.gov.uk/SAML2/metadata/connector > test/UK.xml	
+GB:
+	$(MDSL) -t GB -c https://www.signin.service.gov.uk/SAML2/metadata/connector -p https://proxy-node.eidas.signin.service.gov.uk/ServiceMetadata > prod/GB.xml
+	$(MDSL) -t GB -c https://www.integration.signin.service.gov.uk/SAML2/metadata/connector -p https://proxy-node.integration.eidas.signin.service.gov.uk/ServiceMetadata > test/GB.xml
