@@ -48,7 +48,7 @@ CY:
 
 DK:
 	$(MDSL) -t DK -c https://eidasconnector.eid.digst.dk/Metadata > prod/DK.xml
-	$(MDSL) -t DK -p https://eidasservice.test.eid.digst.dk/Metadata -c https://eidasconnector.test.eid.digst.dk/idp > test/DK.xml
+	$(MDSL) -t DK -p https://eidasservice.test.eid.digst.dk/Metadata -c https://eidasconnector.test.eid.digst.dk/Metadata > test/DK.xml
 
 EE:
 	$(MDSL) -t EE -p https://eidas.ria.ee/EidasNode/ServiceMetadata -c https://eidas.ria.ee/EidasNode/ConnectorMetadata > prod/EE.xml

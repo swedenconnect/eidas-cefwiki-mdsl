@@ -8,4 +8,22 @@
       </ds:X509Data>
     </ds:KeyInfo>
   </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://proxy-node.eidas.signin.service.gov.uk/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://proxy-node.eidas.signin.service.gov.uk/ServiceMetadata" HideFromDiscovery="false"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIICXzCCAeSgAwIBAgIJANkMuBY8kOfjMAoGCCqGSM49BAMDMGYxCzAJBgNVBAYTAkdCMQ8wDQYD
+VQQHDAZMb25kb24xFzAVBgNVBAoMDkNhYmluZXQgT2ZmaWNlMQwwCgYDVQQLDANHRFMxHzAdBgNV
+BAMMFlByb3h5IE5vZGUgTWV0YWRhdGEgQ0EwHhcNMjAwNzIyMDkwNjAzWhcNMjEwNDIyMDkwNjAz
+WjByMQswCQYDVQQGEwJHQjEPMA0GA1UEBwwGTG9uZG9uMRcwFQYDVQQKDA5DYWJpbmV0IE9mZmlj
+ZTEMMAoGA1UECwwDR0RTMSswKQYDVQQDDCJWZXJpZnkgUHJveHkgTm9kZSBNZXRhZGF0YSBTaWdu
+aW5nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAET4bBO3grqJSug/1LddctiOy3MeBOOOP58ogj6ANZ
+0KdcIncqAQEW8TTPn1O7YLK4uuRb0EUYqt92BCnqoEe39EQIjdtv66yJRkTf8jxtjjnjxdYaDOAV
+k6IGyKIQVWNco1IwUDAOBgNVHQ8BAf8EBAMCB4AwHQYDVR0OBBYEFAbV6lxU8sU3x7Wv+t+8LrNJ
+rAJOMB8GA1UdIwQYMBaAFJSJBhuO87b95VnSSSlM62qWSOeWMAoGCCqGSM49BAMDA2kAMGYCMQDt
+qfTtmHA4MlInnyuh2Zm0AJLEXNRIq5yXA/TYYaQ/T6gNhk6OZNpV/dqSSgYgEP0CMQC7LUNN1H5e
+fhM9HTBVMY7JJkAnExTGEs8vBcgXWZwfP8xn3UYIu6liagBA6khVQnk=</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
 </ser:MetadataList>
