@@ -41,7 +41,7 @@ HR:
 
 CZ:
 	$(MDSL) -t CZ -p https://srv.dev.eidasnode.cz/EidasNode/ServiceMetadata -c https://conn.dev.eidasnode.cz/EidasNode/ConnectorMetadata > test/CZ.xml
-	$(MDSL) -t CZ -c https://conn.eidasnode.cz/EidasNode/ConnectorMetadata > prod/CZ.xml
+	$(MDSL) -t CZ -p https://srv.eidasnode.cz/EidasNode/ServiceMetadata -c https://conn.eidasnode.cz/EidasNode/ConnectorMetadata > prod/CZ.xml
 
 CY:
 	$(MDSL) -t CY -p https://pre-eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://pre-eidas.mof.gov.cy/EidasNode/ConnectorMetadata > test/CY.xml
