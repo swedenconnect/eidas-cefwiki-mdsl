@@ -59,7 +59,7 @@ FI:
 	$(MDSL) -t FI -c https://nodefi1.apro.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml #-c https://nodefi1.eidas-qa.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml
 
 FR:
-	$(MDSL) -t FR -p https://eidas-fr.integ01.dev-franceconnect.fr/EidasNode/ServiceMetadata -c https://eidas-fr.integ01.dev-franceconnect.fr/EidasNode/ConnectorMetadata > test/FR.xml
+	$(MDSL) -t FR -p https://eidas.pp.dev-franceconnect.fr/EidasNode/ServiceMetadata -c https://eidas.pp.dev-franceconnect.fr/EidasNode/ConnectorMetadata > test/FR.xml
 
 GR:
 	$(MDSL) -t GR -p https://eidas.gov.gr/EidasNode/ServiceMetadata -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/GR.xml
