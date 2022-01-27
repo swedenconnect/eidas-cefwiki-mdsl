@@ -106,7 +106,8 @@ LV:
 
 MT:
 	#$(MDSL) -t MT -p https://mteidasnode.gov.mt/EidasNode/ConnectorMetadata -c https://mteidasnode.gov.mt/EidasNode/ServiceMetadata > prod/MT.xml
-	$(MDSL) -t MT -c https://mteidasnode.gov.mt/EidasNode/ServiceMetadata > prod/MT.xml
+	#$(MDSL) -t MT -p https://mteidasnode.gov.mt/EidasNode/ServiceMetadata -c https://mteidasnode.gov.mt/EidasNode/ConnectorMetadata > prod/MT.xml
+	$(MDSL) -t MT -c https://mteidasnode.gov.mt/EidasNode/ConnectorMetadata > prod/MT.xml
 	$(MDSL) -t MT -p https://stgmteidasnode.gov.mt/EidasNode/ServiceMetadata -c https://stgmteidasnode.gov.mt/EidasNode/ConnectorMetadata > test/MT.xml
 
 NL:
