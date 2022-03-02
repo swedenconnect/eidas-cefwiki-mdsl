@@ -111,7 +111,7 @@ MT:
 	$(MDSL) -t MT -p https://stgmteidasnode.gov.mt/EidasNode/ServiceMetadata -c https://stgmteidasnode.gov.mt/EidasNode/ConnectorMetadata > test/MT.xml
 
 NL:
-	$(MDSL) -t NL -c https://eidas.minez.nl/EidasNodeC/ConnectorMetadata > prod/NL.xml
+	$(MDSL) -t NL -p https://eidas.minez.nl/EidasNodeP/ServiceMetadata -c https://eidas.minez.nl/EidasNodeC/ConnectorMetadata > prod/NL.xml
 	$(MDSL) -t NL -p https://acc-eidas.minez.nl/EidasNodeP/ServiceMetadata -c https://acc-eidas.minez.nl/EidasNodeC/ConnectorMetadata > test/NL.xml
 
 NO:
