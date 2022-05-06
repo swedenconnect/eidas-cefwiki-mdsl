@@ -127,7 +127,7 @@ PL:
 
 PT:
 	$(MDSL) -t PT -p https://eidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c https://eidas.autenticacao.gov.pt/EidasNode/ConnectorMetadata > prod/PT.xml
-	$(MDSL) -t PT -p https://preprod.eidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c  https://preprod.eidas.autenticacao.gov.pt/EidasNode/ConnectorMetadata > test/PT.xml
+	$(MDSL) -t PT -p https://ppreidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c https://ppreidas.autenticacao.gov.pt/EidasNode/ConnectorMetadata > test/PT.xml
 
 SK:
 	$(MDSL) -t SK -p https://eidas.slovensko.sk/EidasNode/ServiceMetadata -c https://eidas.slovensko.sk/EidasNode/ConnectorMetadata > prod/SK.xml
