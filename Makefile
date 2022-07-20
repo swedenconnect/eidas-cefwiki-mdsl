@@ -145,3 +145,6 @@ SE:
 GB:
 	$(MDSL) -t GB -c https://www.signin.service.gov.uk/SAML2/metadata/connector -p https://proxy-node.eidas.signin.service.gov.uk/ServiceMetadata > prod/GB.xml
 	$(MDSL) -t GB -c https://www.integration.signin.service.gov.uk/SAML2/metadata/connector -p https://proxy-node.integration.eidas.signin.service.gov.uk/ServiceMetadata > test/GB.xml
+
+XB:
+	$(MDSL) -t XB -c https://xb.testnode.eidastest.se/EidasNode/ConnectorMetadata -p https://xb.testnode.eidastest.se/EidasNode/ServiceMetadata > test/XB.xml
