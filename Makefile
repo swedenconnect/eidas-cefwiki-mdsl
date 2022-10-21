@@ -23,7 +23,7 @@ certs:
 	for c in $(COUNTRIES); do $(MAKE) prod/$$c.crt test/$$c.crt; done
 
 EU:
-	#$(MDSL) -t EU -p https://eidasservice.eid.digst.dk/Metadata -c https://eidasconnector.eid.digst.dk/Metadata > prod/EU.xml
+	$(MDSL) -t EU -c https://ecas.ec.europa.eu/cas/eidas/metadata/ecas-ec-europa-eu.xml > prod/EU.xml
 	$(MDSL) -t EU -c https://ecas.acceptance.ec.europa.eu/cas/eidas/metadata/ecas-acceptance-ec-europa-eu.xml > test/EU.xml
 
 AT:
