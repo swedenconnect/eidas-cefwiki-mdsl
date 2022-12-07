@@ -106,8 +106,8 @@ LU:
 	$(MDSL) -t LU -p https://eidas-test.services-publics.lu/cisie-node/ServiceMetadata -c https://eidas-test.services-publics.lu/cisie-node/ConnectorMetadata > test/LU.xml
 
 LV:
-	$(MDSL) -t LV -p https://eidas.vraa.gov.lv/EidasNode/ServiceMetadata > prod/LV.xml
-	$(MDSL) -t LV -p https://eidastest.vraa.gov.lv/EidasNode/ServiceMetadata > test/LV.xml
+	$(MDSL) -t LV -p https://eidas.vraa.gov.lv/EidasNode/ServiceMetadata -c https://eidas.vraa.gov.lv/EidasNode/ConnectorMetadata > prod/LV.xml
+	$(MDSL) -t LV -p https://eidastest.vraa.gov.lv/EidasNode/ServiceMetadata -c https://eidastest.vraa.gov.lv/EidasNode/ConnectorMetadata> test/LV.xml
 
 MT:
 	$(MDSL) -t MT -p https://mteidasnode.gov.mt/EidasNode/ServiceMetadata -c https://mteidasnode.gov.mt/EidasNode/ConnectorMetadata > prod/MT.xml

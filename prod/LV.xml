@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="LV">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://eidas.vraa.gov.lv/EidasNode/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://eidas.vraa.gov.lv/EidasNode/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIFUjCCAzqgAwIBAgIEX2hXSjANBgkqhkiG9w0BAQsFADBrMQswCQYDVQQGEwJMVjENMAsGA1UE
+CAwEUmlnYTENMAsGA1UEBwwEUmlnYTENMAsGA1UECgwEVlJBQTEOMAwGA1UECwwFVlBJU0QxHzAd
+BgNVBAMMFmVpZGFzLW5vZGUtbWV0YWRhdGEtbHYwHhcNMjAwOTIxMDczMzMwWhcNMjMwOTIxMDcz
+MzMwWjBrMQswCQYDVQQGEwJMVjENMAsGA1UECAwEUmlnYTENMAsGA1UEBwwEUmlnYTENMAsGA1UE
+CgwEVlJBQTEOMAwGA1UECwwFVlBJU0QxHzAdBgNVBAMMFmVpZGFzLW5vZGUtbWV0YWRhdGEtbHYw
+ggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDcCDyZGgDhKiRuBeCf0Rs3QgKUrNjsddjr
+ho8gfkZ8kuBTm9KCmvr8uhkgxVBGZo4oIhy+LZdQaeiltXC/novBbTACQIYEaZt7x4pUWzlncz/u
+jJtHOMPxcobV6E+y0pQ9iPQlkDuwEbXvEzgGP76iRbLnf17mfU6ptfojZEQn+xBkpZrIkUH1LYOb
+8GSgG/fjREOWsgAaKYdRtFvjds51+oeah0fLAqSjyHqQMrknzlzWYIfq54phlkDqeHz9dLQzrVq7
+82ZWXzM0rO+j5YGZXfm5Em3BFqSNV7DFZ2uaVE86zLs4NoTzY+7QGPuZ3pGth4xMqYYmQp3fS3TP
+0Naa7kkxUrdLoiSgvRoOMqfqhBuevgA71rA9fhK+46MWqTSvGu0TJZOSgGSVcULTBZWK7Ecd+wWz
+1QbwaO/PPn3k2C6xPpD//m1JtNUPS0v4DOhuu8IQLj+o9BWj91wi+8TVlng/cfXLH2XPRaDz/IwG
+uyW6gekMZb5/14/IGjDrL7R4FggNeimaxWE5pPfhMQweHnT5noZ6MzNfRNYk3XQEGZxXtYdPuKrF
+SiS8FPs/SiDzjY/ZXha8toRE82WJJU56WR0JtAqbxVgWZ/jl2gPnBjLLPx/BPfwSHJO4oLv1/iaK
+FGErX/caL9PZ1Y5NF6Hd7uj33jhif4VJCOxRfjdLAwIDAQABMA0GCSqGSIb3DQEBCwUAA4ICAQAq
+uLfLKFjIetrm2q0NVH2sRmAQou+tPn60Z4vHea3m/t9/2dfzJwRa340ydeJUItETWSxEkkYSE5FJ
+RC3X3N+qXpvVr/4mnF+rfjCVIJHTs7WQ/3+R+uROAVIH2usr3T8xARGwmOY9k+Za40sU1UqTtj64
++WGqihWFUkFAUgXBEVC+eVm8EKbdiid5O00RuL9Xg789rQwvUxD+YmyDHo1ACounDCgr6JUTkRQ3
+UvaCku0CkwU11j8GCQ1IL0aRySJd0ZhLbfFRl02auXfHd+cxndkMdsktYTea9RkWHg2JPyDcCxEl
+97mC3Ex7r17n/DwGfk/PTC8CLJaxZ2hzUZSxrEdRsZ4Qqx2qRoY34qx+xFcQWgcnx859c5D9O/P4
+ggyif1zkWRNV/Q/OE6+cn1dq50gJHjckxkAoKhzqq00WulLwc98SLnTXjVdCIUUFsEP4lFvLYK6g
+VKBjuN37xxO1aqW24ZlhBJkEjrAYhvRF6nd/84GVYaj+ciky5K/Ng60TMXV2igm0Q+vR4eh31NSr
+MDNyqB/TjRmfLPWuJznnHcCuNj4gWnaq0qNoF9lBpiMYEmy88Pz0yjdNd6WRhFzE4WrYc2392iVc
+Bcd4kQJ3rREQbjCCTeM+htEcUyZ1ek7yeO9ciRcJTgvCpxdn2OTmKILM122dn2DRsyOaJvv+HQ==</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
   <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://eidas.vraa.gov.lv/EidasNode/ServiceMetadata">
     <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://eidas.vraa.gov.lv/EidasNode/ServiceMetadata" HideFromDiscovery="false"/>
     <ds:KeyInfo>
