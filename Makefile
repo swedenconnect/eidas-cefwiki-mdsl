@@ -28,7 +28,7 @@ EU:
 
 AT:
 	$(MDSL) -t AT -c https://eidas.bmi.gv.at/EidasNode/ConnectorMetadata > prod/AT.xml
-	$(MDSL) -t AT -c https://eidas-test.bmi.gv.at/EidasNode/ConnectorMetadata > test/AT.xml
+	$(MDSL) -t AT -p https://eidas-test.bmi.gv.at/EidasNode/ServiceMetadata -c https://eidas-test.bmi.gv.at/EidasNode/ConnectorMetadata > test/AT.xml
 
 BE:
 	$(MDSL) -t BE -p https://idp.iamfas.belgium.be/EidasNode/ServiceMetadata -c https://idp.iamfas.belgium.be/EidasNode/ConnectorMetadata > prod/BE.xml
