@@ -1,6 +1,6 @@
 MDSL:=./scripts/build-mdsl-entry.sh -v
 
-COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LV LT LU MT NL NO PL PT SK SI ES SE GB
+COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LI LV LT LU MT NL NO PL PT SK SI ES SE GB
 
 .PHONY: update $(COUNTRIES) prod.xml test.xml
 
@@ -95,6 +95,11 @@ IS:
 IT:
 	$(MDSL) -t IT -p https://service.eid.gov.it/EidasNode/ServiceMetadata -c https://connector.eid.gov.it/EidasNode/ConnectorMetadata > prod/IT.xml
 	$(MDSL) -t IT -p https://service.pre.eid.gov.it/EidasNode/ServiceMetadata -c https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata > test/IT.xml
+
+LI:
+	#$(MDSL) -t LI -p https://node.llv.li/EidasNode/ServiceMetadata -c https://node.llv.li/EidasNode/ConnectorMetadata > prod/LI.xml
+	$(MDSL) -t LI -c https://node.llv.li/EidasNode/ConnectorMetadata > prod/LI.xml
+	$(MDSL) -t LI -p https://nodea.llv.li/EidasNode/ServiceMetadata -c https://nodea.llv.li/EidasNode/ConnectorMetadata > test/LI.xml
 
 LT:
 	#$(MDSL) -t LT -p https://peps2.eid.lt/EidasNode/ServiceMetadata -c https://peps2.eid.lt/EidasNode/ConnectorMetadata > prod/LT.xml
