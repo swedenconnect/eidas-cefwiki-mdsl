@@ -97,8 +97,7 @@ IT:
 	$(MDSL) -t IT -p https://service.pre.eid.gov.it/EidasNode/ServiceMetadata -c https://connector.pre.eid.gov.it/EidasNode/ConnectorMetadata > test/IT.xml
 
 LI:
-	#$(MDSL) -t LI -p https://node.llv.li/EidasNode/ServiceMetadata -c https://node.llv.li/EidasNode/ConnectorMetadata > prod/LI.xml
-	$(MDSL) -t LI -c https://node.llv.li/EidasNode/ConnectorMetadata > prod/LI.xml
+	$(MDSL) -t LI -p https://node.llv.li/EidasNode/ServiceMetadata -c https://node.llv.li/EidasNode/ConnectorMetadata > prod/LI.xml
 	$(MDSL) -t LI -p https://nodea.llv.li/EidasNode/ServiceMetadata -c https://nodea.llv.li/EidasNode/ConnectorMetadata > test/LI.xml
 
 LT:
