@@ -101,8 +101,7 @@ LI:
 	$(MDSL) -t LI -p https://nodea.llv.li/EidasNode/ServiceMetadata -c https://nodea.llv.li/EidasNode/ConnectorMetadata > test/LI.xml
 
 LT:
-	#$(MDSL) -t LT -p https://peps2.eid.lt/EidasNode/ServiceMetadata -c https://peps2.eid.lt/EidasNode/ConnectorMetadata > prod/LT.xml
-	$(MDSL) -t LT -c https://peps2.eid.lt/EidasNode/ConnectorMetadata > prod/LT.xml
+	$(MDSL) -t LT -p https://peps2.eid.lt/EidasNode/ServiceMetadata -c https://peps2.eid.lt/EidasNode/ConnectorMetadata > prod/LT.xml
 	$(MDSL) -t LT -p https://testpeps.eid.lt/EidasNode/ServiceMetadata -c https://testpeps.eid.lt/EidasNode/ConnectorMetadata > test/LT.xml
 
 LU:
