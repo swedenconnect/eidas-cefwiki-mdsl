@@ -27,7 +27,7 @@ EU:
 	$(MDSL) -t EU -c https://ecas.acceptance.ec.europa.eu/cas/eidas/metadata/ecas-acceptance-ec-europa-eu.xml > test/EU.xml
 
 AT:
-	$(MDSL) -t AT -c https://eidas.bmi.gv.at/EidasNode/ConnectorMetadata > prod/AT.xml
+	$(MDSL) -t AT -p https://eidas.bmi.gv.at/EidasNode/ServiceMetadata -c https://eidas.bmi.gv.at/EidasNode/ConnectorMetadata > prod/AT.xml
 	$(MDSL) -t AT -p https://eidas-test.bmi.gv.at/EidasNode/ServiceMetadata -c https://eidas-test.bmi.gv.at/EidasNode/ConnectorMetadata > test/AT.xml
 
 BE:
