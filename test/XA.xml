@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="XA">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://xa.testnode.eidastest.se/EidasNodeConnector/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://xa.testnode.eidastest.se/EidasNodeConnector/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIB2TCCAX+gAwIBAgIEYrN5kjAKBggqhkjOPQQDAjBlMQswCQYDVQQGEwJYQTEXMBUGA1UECgwO
+ZUlEQVMgbm9kZSBvcmcxHDAaBgNVBAsME2VJREFTIG5vZGUgb3JnIHVuaXQxHzAdBgNVBAMMFlRl
+c3QgQ0VGIGVJREFTIG5vZGUgWEEwHhcNMjIwNjIyMjAyMDM0WhcNMzIwNjIyMjAyMDM0WjBlMQsw
+CQYDVQQGEwJYQTEXMBUGA1UECgwOZUlEQVMgbm9kZSBvcmcxHDAaBgNVBAsME2VJREFTIG5vZGUg
+b3JnIHVuaXQxHzAdBgNVBAMMFlRlc3QgQ0VGIGVJREFTIG5vZGUgWEEwWTATBgcqhkjOPQIBBggq
+hkjOPQMBBwNCAASpinpKgRM6b474YA6+eR09j3AjoYBeJAGKgNA6ZV7LZjOjKHBHqKpgHRM3tbFg
+LSkw+hIeYl489zKquQnxTSe+ox0wGzAOBgNVHQ8BAf8EBAMCA4gwCQYDVR0TBAIwADAKBggqhkjO
+PQQDAgNIADBFAiAQ3vnUufaQXkqxyQLjSUDSfeaDXy+Hyhz/7nGV9Dn+hQIhAI3C12HHHdDVDRgI
+9OhUDk+TSRQvh9YZzhDnUemRUDsW</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://xa.testnode.eidastest.se/EidasNodeProxy/ServiceMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://xa.testnode.eidastest.se/EidasNodeProxy/ServiceMetadata" HideFromDiscovery="false"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIB2TCCAX+gAwIBAgIEYrN5kjAKBggqhkjOPQQDAjBlMQswCQYDVQQGEwJYQTEXMBUGA1UECgwO
+ZUlEQVMgbm9kZSBvcmcxHDAaBgNVBAsME2VJREFTIG5vZGUgb3JnIHVuaXQxHzAdBgNVBAMMFlRl
+c3QgQ0VGIGVJREFTIG5vZGUgWEEwHhcNMjIwNjIyMjAyMDM0WhcNMzIwNjIyMjAyMDM0WjBlMQsw
+CQYDVQQGEwJYQTEXMBUGA1UECgwOZUlEQVMgbm9kZSBvcmcxHDAaBgNVBAsME2VJREFTIG5vZGUg
+b3JnIHVuaXQxHzAdBgNVBAMMFlRlc3QgQ0VGIGVJREFTIG5vZGUgWEEwWTATBgcqhkjOPQIBBggq
+hkjOPQMBBwNCAASpinpKgRM6b474YA6+eR09j3AjoYBeJAGKgNA6ZV7LZjOjKHBHqKpgHRM3tbFg
+LSkw+hIeYl489zKquQnxTSe+ox0wGzAOBgNVHQ8BAf8EBAMCA4gwCQYDVR0TBAIwADAKBggqhkjO
+PQQDAgNIADBFAiAQ3vnUufaQXkqxyQLjSUDSfeaDXy+Hyhz/7nGV9Dn+hQIhAI3C12HHHdDVDRgI
+9OhUDk+TSRQvh9YZzhDnUemRUDsW</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
+</ser:MetadataList>
