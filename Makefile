@@ -11,7 +11,7 @@ docker:
 
 update: $(COUNTRIES) prod.xml test.xml certs
 
-prod.xml: 
+prod.xml:
 	@./scripts/build-mdsl.sh prod > $@
 test.xml:
 	@./scripts/build-mdsl.sh test > $@
@@ -137,8 +137,8 @@ PT:
 SK:
 	$(MDSL) -t SK -p https://eidas.slovensko.sk/EidasNode/ServiceMetadata -c https://eidas.slovensko.sk/EidasNode/ConnectorMetadata > prod/SK.xml
 	$(MDSL) -t SK -p https://eidas.upvsfixnew.gov.sk/EidasNode/ServiceMetadata -c https://eidas.upvsfixnew.gov.sk/EidasNode/ConnectorMetadata > test/SK.xml
-       
-SI: 
+
+SI:
 	#$(MDSL) -t SI -p https://sipeps.gov.si/EidasNode/ServiceMetadata -c https://sipeps.gov.si/EidasNode/ConnectorMetadata > prod/SI.xml
 	$(MDSL) -t SI -c https://sipeps.gov.si/EidasNode/ConnectorMetadata > prod/SI.xml
 	$(MDSL) -t SI -p https://sipeps-test.gov.si/EidasNode/ServiceMetadata -c https://sipeps-test.gov.si/EidasNode/ConnectorMetadata > test/SI.xml
