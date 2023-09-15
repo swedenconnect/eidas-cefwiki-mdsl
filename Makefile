@@ -11,7 +11,7 @@ docker:
 
 update: $(COUNTRIES) prod.xml test.xml certs
 
-prod.xml: 
+prod.xml:
 	@./scripts/build-mdsl.sh prod > $@
 test.xml:
 	@./scripts/build-mdsl.sh test > $@
@@ -62,7 +62,7 @@ ES:
 
 FI:
 	$(MDSL) -t FI -c https://nodefi1.eidas.tunnistus.fi/EidasNode/ConnectorMetadata > prod/FI.xml
-	$(MDSL) -t FI -c https://nodefi1.apro.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml #-c https://nodefi1.eidas-qa.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml
+	$(MDSL) -t FI -c https://nodefi1.eidas-qa.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml
 
 FR:
 	#$(MDSL) -t FR -p https://eidas.franceconnect.gouv.fr/EidasNode/ServiceMetadata -c https://eidas.franceconnect.gouv.fr/EidasNode/ConnectorMetadata > prod/FR.xml
@@ -137,8 +137,8 @@ PT:
 SK:
 	$(MDSL) -t SK -p https://eidas.slovensko.sk/EidasNode/ServiceMetadata -c https://eidas.slovensko.sk/EidasNode/ConnectorMetadata > prod/SK.xml
 	$(MDSL) -t SK -p https://eidas.upvsfixnew.gov.sk/EidasNode/ServiceMetadata -c https://eidas.upvsfixnew.gov.sk/EidasNode/ConnectorMetadata > test/SK.xml
-       
-SI: 
+
+SI:
 	#$(MDSL) -t SI -p https://sipeps.gov.si/EidasNode/ServiceMetadata -c https://sipeps.gov.si/EidasNode/ConnectorMetadata > prod/SI.xml
 	$(MDSL) -t SI -c https://sipeps.gov.si/EidasNode/ConnectorMetadata > prod/SI.xml
 	$(MDSL) -t SI -p https://sipeps-test.gov.si/EidasNode/ServiceMetadata -c https://sipeps-test.gov.si/EidasNode/ConnectorMetadata > test/SI.xml
