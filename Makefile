@@ -126,9 +126,12 @@ NO:
 	$(MDSL) -t NO -p https://eidas-test1.difi.eon.no/EidasNode/ServiceMetadata -c https://eidas-test1.difi.eon.no/EidasNode/ConnectorMetadata  > test/NO.xml
 
 PL:
-	#$(MDSL) -t PL -p https://plnode.eidas.gov.pl/EidasNode/ServiceMetadata -c https://plnode.eidas.gov.pl/EidasNode/ConnectorMetadata > prod/PL.xml
+	@#$(MDSL) -t PL -p https://plnode.eidas.gov.pl/EidasNode/ServiceMetadata -c https://plnode.eidas.gov.pl/EidasNode/ConnectorMetadata > prod/PL.xml
 	$(MDSL) -t PL -c https://plnode.eidas.gov.pl/EidasNode/ConnectorMetadata > prod/PL.xml
-	$(MDSL) -t PL -p https://test.eidas.gov.pl/EidasNode/ServiceMetadata -c https://test.eidas.gov.pl/EidasNode/ConnectorMetadata > test/PL.xml
+	$(MDSL) -t PL -p https://test.eidas.gov.pl/EidasNode/ServiceMetadata -c https://test.eidas.gov.pl/EidasNode/ConnectorMetadata > test/PL25.xml
+	$(MDSL) -t PL -p https://test.eidas.gov.pl/2.6/Node/ServiceMetadata -c https://test.eidas.gov.pl/2.6/Node/ConnectorMetadata > test/PL26.xml
+	head -n $$(( $$(wc -l test/PL25.xml | awk '{print $$1}') - 1 )) test/PL25.xml > test/PL.xml
+	tail +3 test/PL26.xml >> test/PL.xml
 
 PT:
 	$(MDSL) -t PT -p https://eidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c https://eidas.autenticacao.gov.pt/EidasNode/ConnectorMetadata > prod/PT.xml
