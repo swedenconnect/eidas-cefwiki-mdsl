@@ -45,19 +45,4 @@ lLSKsAwIu+dRWr2rpd8PfrPaFQIgFpUEVdrC1rlsc0xz6jNaVhdr5cw0NtlzJCALGwT6MBo=</ds:X50
       </ds:X509Data>
     </ds:KeyInfo>
   </ser:MetadataLocation>
-  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://test.eidas.gov.pl/2.6/Node/ServiceMetadata">
-    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/ProxyService" EntityID="https://test.eidas.gov.pl/2.6/Node/ServiceMetadata" HideFromDiscovery="false"/>
-    <ds:KeyInfo>
-      <ds:X509Data>
-        <ds:X509Certificate>MIIBvzCCAWOgAwIBAgIEJeJ5xDAMBggqhkjOPQQDAgUAMFAxGTAXBgNVBAMTEENBLU5BU0stUElC
-LURTUEMxETAPBgNVBAoTCE5BU0stUElCMQ0wCwYDVQQLEwREU1BDMREwDwYDVQQHEwhXYXJzemF3
-YTAeFw0yMzA3MjcwMDAwMDBaFw0yNDA3MjcwMDAwMDBaMGcxCzAJBgNVBAYTAlBMMREwDwYDVQQH
-EwhXYXJzemF3YTERMA8GA1UEChMITkFTSy1QSUIxDTALBgNVBAsTBERTUEMxIzAhBgNVBAMTGm1l
-dGFkYXRhLXRlc3QtcGwtMjAyMy0yMDI0MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2USrq8zt
-FZCVgLUmOp9S+QMpw/eFtPklQcfIOOppNT5c6i5uzhYIwWylbINgBWwdrptEL3bn9PurrM6i5h6O
-5KMSMBAwDgYDVR0PAQH/BAQDAgeAMAwGCCqGSM49BAMCBQADSAAwRQIhAOl6eRZKMl1CQTOyeDCx
-KKwjh/qCOpb6nUs+ep7C0qjaAiAwxH5hSGT5hMzNaxgjIVbr2Z0T7rtV1lFKLE5Y0ZUfYQ==</ds:X509Certificate>
-      </ds:X509Data>
-    </ds:KeyInfo>
-  </ser:MetadataLocation>
 </ser:MetadataList>
