@@ -52,4 +52,30 @@ QZNp7zjBVl8tA71adTehE6yUxAYBmSIMOHHF4mY6MSnv9XmzTYjubOmQdpWNKfazlWPuTTV5EcIH
       </ds:X509Data>
     </ds:KeyInfo>
   </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://plnode.eidas.gov.pl/2.6/Node/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://plnode.eidas.gov.pl/2.6/Node/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIENDCCAxygAwIBAgIUFjN/uPVkM/LQFMBZ5apu/ioAC9UwDQYJKoZIhvcNAQELBQAwVDELMAkG
+A1UEBhMCUEwxKDAmBgNVBAoMH0tyYWpvd2EgSXpiYSBSb3psaWN6ZW5pb3dhIFMuQS4xGzAZBgNV
+BAMMElNaQUZJUiBUcnVzdGVkIENBMjAeFw0yMjA5MDYxMTMwMDBaFw0yNDA5MDYxMTMwMDBaMGkx
+CzAJBgNVBAYTAlBMMTowOAYDVQQKDDFTa2FyYiBQYcWEc3R3YS1LYW5jZWxhcmlhIFByZXplc2Eg
+UmFkeSBNaW5pc3Ryw7N3MR4wHAYDVQQDDBVtZXRhZGF0YS1laWRhcy1nb3YtcGwwWTATBgcqhkjO
+PQIBBggqhkjOPQMBBwNCAATO74Vz0hvyarOWDgDylcx/BpBh/Q5tlMtlyRkiwUkIfMKxn2L64YhP
+VaDQxyNxd4+WfUcHGo3QpUeUp1EvMEMIo4IBsjCCAa4wZQYDVR0gBF4wXDBaBgoqhGgBhvcjAQIJ
+MEwwSgYIKwYBBQUHAgEWPmh0dHA6Ly93d3cuZWxla3Ryb25pY3pueXBvZHBpcy5wbC9pbmZvcm1h
+Y2plL2Rva3VtZW50eS1pLXVtb3d5MIGJBggrBgEFBQcBAQR9MHswSQYIKwYBBQUHMAKGPWh0dHA6
+Ly93d3cuZWxla3Ryb25pY3pueXBvZHBpcy5wbC9jZXJ0eWZpa2F0eS90cnVzdGVkX2NhMi5jcnQw
+LgYIKwYBBQUHMAGGImh0dHA6Ly9vY3NwLmVsZWt0cm9uaWN6bnlwb2RwaXMucGwwCQYDVR0JBAIw
+ADALBgNVHQ8EBAMCB4AwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMBMB8GA1UdIwQYMBaA
+FB51vDOjH2rMfs/dBT7bu9p8vOlEMEIGA1UdHwQ7MDkwN6A1oDOGMWh0dHA6Ly9jZHAuZWxla3Ry
+b25pY3pueXBvZHBpcy5wbC90cnVzdGVkX2NhMi5jcmwwHQYDVR0OBBYEFPdpjdm53QPzQvCAD6Bn
+r7DwIdjgMA0GCSqGSIb3DQEBCwUAA4IBAQA5N9Ob4dWf31ci2HDgLUmRDDBNKB22ozC8NlBQhiUZ
+TWOLTJ/X/GrB09XA8fiLPf8VLphpY3y5mUQSRN95FIlqCV6w9LpzP2/2O0WZl6Jyy8JFuYeSAcf4
+UC7XrU1r1fwj87uvYNCjf8tA4eyOJYpQLJ9yfJmuyTzArSuZ4QkR0V434qWYMK0+KyWwUGTxH8GB
+QZNp7zjBVl8tA71adTehE6yUxAYBmSIMOHHF4mY6MSnv9XmzTYjubOmQdpWNKfazlWPuTTV5EcIH
+5p2fJ6yIVsjvhmOzFQMsFrz97tqAoriZ2xEhjgiCpPN0zzrYxKswROKdYXXFzDhob1XnRFPX</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
 </ser:MetadataList>
