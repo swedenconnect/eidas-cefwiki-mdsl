@@ -32,14 +32,17 @@ cat>$x<<EOF
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="$territory">
 EOF
 
+# Some contries blocks curl and wget
+USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15'
+
 if [ "x$connector" != "x" ]; then
 c_xml=`mktemp`
-wget --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
+wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
 fi
 
 if [ "x$proxy" != "x" ]; then
 p_xml=`mktemp`
-wget --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >> $x
+wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >> $x
 fi
 
 echo "</ser:MetadataList>" >> $x
