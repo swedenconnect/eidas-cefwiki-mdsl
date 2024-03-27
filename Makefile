@@ -35,8 +35,10 @@ BE:
 	$(MDSL) -t BE -p https://idp.iamfas.qa.belgium.be/EidasNode/ServiceMetadata -c https://idp.iamfas.qa.belgium.be/EidasNode/ConnectorMetadata > test/BE.xml
 
 BG:
-	$(MDSL) -t BG -p https://eidas.egov.bg/EidasNode/ServiceMetadata -c https://eidas.egov.bg/EidasNode/ConnectorMetadata > prod/BG.xml
-	$(MDSL) -t BG -p https://eidas-test.egov.bg/EidasNode/ServiceMetadata -c https://eidas-test.egov.bg/EidasNode/ConnectorMetadata > test/BG.xml
+	#$(MDSL) -t BG -p https://eidas.egov.bg/EidasNode/ServiceMetadata -c https://eidas.egov.bg/EidasNode/ConnectorMetadata > prod/BG.xml
+	$(MDSL) -t BG -c https://eidas.egov.bg/EidasNode/ConnectorMetadata > prod/BG.xml
+	#$(MDSL) -t BG -p https://eidas-test.egov.bg/EidasNode/ServiceMetadata -c https://eidas-test.egov.bg/EidasNode/ConnectorMetadata > test/BG.xml
+	$(MDSL) -t BG -c https://eidas-test.egov.bg/EidasNode/ConnectorMetadata > test/BG.xml
 
 
 CZ:
