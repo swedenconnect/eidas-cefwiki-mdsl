@@ -185,7 +185,7 @@ SK:
 SI:
 	# Slovenia
 	$(MDSL) -t SI -p https://sipeps.gov.si/EidasNode/ServiceMetadata -c https://sipeps.gov.si/EidasNode/ConnectorMetadata > prod/SI.xml
-	$(MDSL) -t SI -p https://sipeps-test.gov.si/EidasNode/ServiceMetadata -c https://sipeps-test.gov.si/EidasNode/ConnectorMetadata > test/SI.xml
+	$(MDSL) -t SI -p https://sipeps-test.setcce.si/EidasNode/ServiceMetadata -c https://sipeps-test.setcce.si/EidasNode/ConnectorMetadata > test/SI.xml
 
 SE:
 	#SE Sweden / Sverige
