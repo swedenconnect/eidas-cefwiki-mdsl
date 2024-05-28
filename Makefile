@@ -196,4 +196,4 @@ XA:
 	$(MDSL) -t XA -c https://xa.testnode.eidastest.se/EidasNodeConnector/ConnectorMetadata -p https://xa.testnode.eidastest.se/EidasNodeProxy/ServiceMetadata > test/XA.xml
 
 XB:
-	$(MDSL) -t XB -c https://xb.testnode.eidastest.se/EidasNode/ConnectorMetadata -p https://xb.testnode.eidastest.se/EidasNode/ServiceMetadata > test/XB.xml
+	$(MDSL) -t XB -c https://xb.testnode.eidastest.se/EidasNodeConnector/ConnectorMetadata -p https://xb.testnode.eidastest.se/EidasNodeProxy/ServiceMetadata > test/XB.xml
