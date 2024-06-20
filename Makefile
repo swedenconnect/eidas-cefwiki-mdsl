@@ -1,6 +1,6 @@
 MDSL:=./scripts/build-mdsl-entry.sh -v
 
-COUNTRIES:=AT BE BG HR CZ CY DK EE FI FR GR HU IS IE IT LI LV LT LU MT NL NO PL PT SK SI ES SE
+COUNTRIES:=AT BE BG HR CZ CY DE DK EE FI FR GR HU IS IE IT LI LV LT LU MT NL NO PL PT SK SI ES SE
 
 .PHONY: update $(COUNTRIES) prod.xml test.xml
 
@@ -55,6 +55,11 @@ CY:
 	#$(MDSL) -t CY -p https://eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://eidas.mof.gov.cy/EidasNode/ConnectorMetadata > prod/CY.xml
 	$(MDSL) -t CY -c https://eidas.mof.gov.cy/EidasNode/ConnectorMetadata > prod/CY.xml
 	$(MDSL) -t CY -p https://pre-eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://pre-eidas.mof.gov.cy/EidasNode/ConnectorMetadata > test/CY.xml
+
+DE:
+	# Germany / Tyskland
+	$(MDSL) -t DE -p https://demw.eidas.swedenconnect.se/eidas-middleware/Metadata > prod/DE-demw-se.xml
+	$(MDSL) -t DE -p https://qa.demw.eidas.swedenconnect.se/eidas-middleware/Metadata > test/DE.xml
 
 DK:
 	# Denmark / Danmark
