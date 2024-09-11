@@ -158,7 +158,7 @@ NO:
 
 PL:
 	# Poland / Polen
-	$(MDSL) -t PL -p https://plnode.eidas.gov.pl/EidasNode/ServiceMetadata -c https://plnode.eidas.gov.pl/2.6/Node/ConnectorMetadata > prod/PL.xml
+	$(MDSL) -t PL -p https://plnode.eidas.gov.pl/2.6/Node/ServiceMetadata -c https://plnode.eidas.gov.pl/2.6/Node/ConnectorMetadata > prod/PL.xml
 	$(MDSL) -t PL -p https://node.test.eidas.gov.pl/2.6/Node/ServiceMetadata -c https://node.test.eidas.gov.pl/2.6/Node/ConnectorMetadata > test/PL.xml
 
 PT:
