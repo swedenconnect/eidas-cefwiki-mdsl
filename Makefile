@@ -52,8 +52,7 @@ CZ:
 
 CY:
 	# Cyprus
-	#$(MDSL) -t CY -p https://eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://eidas.mof.gov.cy/EidasNode/ConnectorMetadata > prod/CY.xml
-	$(MDSL) -t CY -c https://eidas.mof.gov.cy/EidasNode/ConnectorMetadata > prod/CY.xml
+	$(MDSL) -t CY -p https://eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://eidas.mof.gov.cy/EidasNode/ConnectorMetadata > prod/CY.xml
 	$(MDSL) -t CY -p https://pre-eidas.mof.gov.cy/EidasNode/ServiceMetadata -c https://pre-eidas.mof.gov.cy/EidasNode/ConnectorMetadata > test/CY.xml
 
 DE:
