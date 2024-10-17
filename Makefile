@@ -153,7 +153,7 @@ NO:
 	# Norway / Norge
 	#$(MDSL) -t NO -p https://eidas.difi.no/EidasNode/ServiceMetadata -c https://eidas.difi.no/EidasNode/ConnectorMetadata > prod/NO.xml
 	$(MDSL) -t NO -c https://eidas.difi.no/EidasNode/ConnectorMetadata > prod/NO.xml
-	$(MDSL) -t NO -p https://eidas-test1.difi.eon.no/EidasNode/ServiceMetadata -c https://eidas-test1.difi.eon.no/EidasNode/ConnectorMetadata  > test/NO.xml
+	$(MDSL) -t NO -p https://proxy.test.eidasnode.no/ServiceMetadata -c https://connector.test.eidasnode.no/ConnectorMetadata  > test/NO.xml
 
 PL:
 	# Poland / Polen
