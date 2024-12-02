@@ -80,6 +80,7 @@ FI:
 	# Finland
 	$(MDSL) -t FI -c https://nodefi1.eidas.tunnistus.fi/EidasNode/ConnectorMetadata > prod/FI.xml
 	$(MDSL) -t FI -p https://nodefi1.eidas-qa.tunnistus.fi/EidasNodeProxy/ServiceMetadata -c https://nodefi1.eidas-qa.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI.xml
+	$(MDSL) -t FI -c https://nodefi1.apro.tunnistus.fi/EidasNode/ConnectorMetadata > test/FI-dev.xml
 
 FR:
 	# France
