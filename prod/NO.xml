@@ -1,3 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="NO">
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://connector.eidasnode.no/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://connector.eidasnode.no/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIB/zCCAaSgAwIBAgIKVxjiwUj+BwdiAjAMBggqhkjOPQQDBAUAMHkxEjAQBgNVBAcTCUxlaWth
+bmdlcjEkMCIGA1UEChMbRGlnaXRhbGlzZXJpbmdzZGlyZWt0b3JhdGV0MRIwEAYDVQQLEwlJRC1w
+b3J0ZW4xHDAaBgNVBAMTE2VJZGFzLXNpZ24tbWV0YWRhdGExCzAJBgNVBAYTAk5PMB4XDTI0MDky
+MzAwMDAwMFoXDTM0MDkyMzAwMDAwMFoweTESMBAGA1UEBxMJTGVpa2FuZ2VyMSQwIgYDVQQKExtE
+aWdpdGFsaXNlcmluZ3NkaXJla3RvcmF0ZXQxEjAQBgNVBAsTCUlELXBvcnRlbjEcMBoGA1UEAxMT
+ZUlkYXMtc2lnbi1tZXRhZGF0YTELMAkGA1UEBhMCTk8wWTATBgcqhkjOPQIBBggqhkjOPQMBBwNC
+AAS1OWke8jkVbNWHRLrakzF5LyIorLyS/S9NX4vR9kIAw2ZdNjvgfQ41YWe1natbCi9feX200qQe
+J/aDpWFF9LfmoxIwEDAOBgNVHQ8BAQAEBAMCAgQwDAYIKoZIzj0EAwQFAANHADBEAiAN9yc1AQVD
+RvH2aqX3ZMjbbofuKlWjlJs3pBKAlYbJRwIgKaOzM6Uz+X1MecV55GlwIp3VBAuDlm5ZrVCU4tkJ
+dA8=</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
 </ser:MetadataList>
