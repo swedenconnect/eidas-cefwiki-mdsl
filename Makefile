@@ -187,6 +187,7 @@ SE:
 	#SE Sweden / Sverige
 	$(MDSL) -t SE -p https://proxy.eidas.swedenconnect.se/eidas-ps/ServiceMetadata -c https://connector.eidas.swedenconnect.se/idp/metadata/sp > prod/SE.xml
 	$(MDSL) -t SE -p https://qa.proxy.eidas.swedenconnect.se/eidas-ps/ServiceMetadata -c https://qa.connector.eidas.swedenconnect.se/idp/metadata/sp > test/SE.xml
+	$(MDSL) -t SE -p https://test.proxy.eidas.swedenconnect.se/eidas-ps/ServiceMetadata -c https://test.connector.eidas.swedenconnect.se/idp/metadata/sp > test/SE-test.xml
 
 XA:
 	$(MDSL) -t XA -c https://xa.testnode.eidastest.se/EidasNodeConnector/ConnectorMetadata -p https://xa.testnode.eidastest.se/EidasNodeProxy/ServiceMetadata > test/XA.xml
