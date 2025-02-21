@@ -59,7 +59,7 @@ DE:
 	# Germany / Tyskland
 	$(MDSL) -t DE -p https://demw.eidas.swedenconnect.se/eidas-middleware/Metadata > prod/DE-demw-se.xml
 	$(MDSL) -t DE -p https://qa.demw.eidas.swedenconnect.se/eidas-middleware/Metadata > test/DE.xml
-	$(MDSL) -t DE -p https://test.demw.eidas.swedenconnect.se/eidas-middleware/Metadata > test-test/DE.xml
+	$(MDSL) -t DE -p https://test.demw.eidas.swedenconnect.se/eidas-middleware/Metadata > test/DE-test.xml
 
 DK:
 	# Denmark / Danmark
