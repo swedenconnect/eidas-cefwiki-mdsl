@@ -1,6 +1,6 @@
 MDSL:=./scripts/build-mdsl-entry.sh -v
 
-COUNTRIES:=AT BE BG HR CZ CY DE DK EE FI FR GR HU IS IE IT LI LV LT LU MT NL NO PL PT SK SI ES SE
+COUNTRIES:=AT BE BG HR CZ CY DE DK EE FI FR EL HU IS IE IT LI LV LT LU MT NL NO PL PT SK SI ES SE
 
 .PHONY: update $(COUNTRIES) prod.xml test.xml
 
@@ -88,11 +88,11 @@ FR:
 	$(MDSL) -t FR -p https://eidas.franceconnect.gouv.fr/EidasNode/ServiceMetadata   -c https://eidas.franceconnect.gouv.fr/EidasNode/ConnectorMetadata > prod/FR.xml
 	$(MDSL) -t FR -p https://eidas.pp.dev-franceconnect.fr/EidasNode/ServiceMetadata -c https://eidas.pp.dev-franceconnect.fr/EidasNode/ConnectorMetadata > test/FR.xml
 
-GR:
-	# Greece
-	#$(MDSL) -t GR -p https://eidas.gov.gr/EidasNode/ServiceMetadata -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/GR.xml
-	$(MDSL) -t GR -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/GR.xml
-	$(MDSL) -t GR -p https://pre.eidas.gov.gr/EidasNode/ServiceMetadata -c https://pre.eidas.gov.gr/EidasNode/ConnectorMetadata > test/GR.xml
+EL:
+	# Greece former known as GR
+	#$(MDSL) -t EL -p https://eidas.gov.gr/EidasNode/ServiceMetadata -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/EL.xml
+	$(MDSL) -t EL -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/EL.xml
+	$(MDSL) -t EL -p https://pre.eidas.gov.gr/EidasNode/ServiceMetadata -c https://pre.eidas.gov.gr/EidasNode/ConnectorMetadata > test/EL.xml
 
 HR:
 	# Croatia
