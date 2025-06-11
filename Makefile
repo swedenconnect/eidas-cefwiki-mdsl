@@ -101,7 +101,8 @@ HR:
 
 HU:
 	# Hungary
-	$(MDSL) -t HU -p https://hpeps.teszt.gov.hu/eidas/saml/authnrequest -c https://hpeps.teszt.gov.hu/eidas/saml/metadata.xml > test/HU.xml
+	#$(MDSL) -t HU -p https://hpeps.teszt.gov.hu/eidas/saml/authnrequest -c https://hpeps.teszt.gov.hu/eidas/saml/metadata.xml > test/HU.xml
+	$(MDSL) -t HU -p https://uj-test.eidas.gov.hu/proxy/realms/ProxyRealm/protocol/saml/descriptor -c https://uj-test.eidas.gov.hu/connector/realms/ConnectorRealm/broker/router-saml/endpoint/descriptor > test/HU.xml
 
 IE:
 	# Ireland
