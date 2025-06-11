@@ -97,7 +97,7 @@ EL:
 HR:
 	# Croatia
 	$(MDSL) -t HR -p https://eidas.gov.hr/EidasNode/ServiceMetadata -c https://eidas.gov.hr/EidasNode/ConnectorMetadata > prod/HR.xml
-	$(MDSL) -t HR -p https://eidastst.fina.hr/EidasNode/ServiceMetadata -c https://eidastst.fina.hr/EidasNode/ConnectorMetadata > test/HR.xml
+	$(MDSL) -t HR -p https://eidastst.fina.hr/EidasNodeProxy/ServiceMetadata -c https://eidastst.fina.hr/EidasNodeConnector/ConnectorMetadata > test/HR.xml
 
 HU:
 	# Hungary
