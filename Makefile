@@ -92,7 +92,8 @@ EL:
 	# Greece former known as GR
 	#$(MDSL) -t EL -p https://eidas.gov.gr/EidasNode/ServiceMetadata -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/EL.xml
 	$(MDSL) -t EL -c https://eidas.gov.gr/EidasNode/ConnectorMetadata > prod/EL.xml
-	$(MDSL) -t EL -p https://pre.eidas.gov.gr/EidasNode/ServiceMetadata -c https://pre.eidas.gov.gr/EidasNode/ConnectorMetadata > test/EL.xml
+	#$(MDSL) -t EL -p https://pre.eidas.gov.gr/EidasNode/ServiceMetadata -c https://pre.eidas.gov.gr/EidasNode/ConnectorMetadata > test/EL.xml
+	$(MDSL) -t EL -c https://pre.eidas.gov.gr/EidasNode/ConnectorMetadata > test/EL.xml
 
 HR:
 	# Croatia
