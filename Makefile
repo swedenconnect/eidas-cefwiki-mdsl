@@ -170,10 +170,8 @@ PT:
 
 RO:
 	# Romania
-	# $(MDSL) -t RO -p https://eidas.autenticacao.gov.pt/EidasNode/ServiceMetadata -c  https://eidas.gov.ro/EidasNode/ConnectorMetadata> prod/RO.xml
-	# $(MDSL) -t RO -p https://dev.eidas.gov.ro/EidasNode/ServiceMetadata -c https://dev.eidas.gov.ro/EidasNode/ConnectorMetadata > test/RO.xml
 	$(MDSL) -t RO -p https://eidas.gov.ro/EidasNode/ServiceMetadata -c https://eidas.gov.ro/EidasNode/ConnectorMetadata > prod/RO.xml
-	$(MDSL) -t RO -p  https://dev.eidas.gov.ro/EidasNode/ServiceMetadata -c https://dev.eidas.gov.ro/EidasNode/ConnectorMetadata > test/RO.xml
+	$(MDSL) -t RO -p  https://dev.eidas.gov.ro/EidasNodeProxy/ServiceMetadata  -c https://dev.eidas.gov.ro/EidasNodeConnector/ConnectorMetadata > test/RO.xml
 
 SK:
 	# Slovakia
