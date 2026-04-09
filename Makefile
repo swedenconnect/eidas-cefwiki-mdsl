@@ -115,7 +115,7 @@ IE:
 IS:
 	# Iceland
 	#$(MDSL) -t IS -p https://node.island.is/eidas-node/ServiceMetadata -c https://node.island.is/eidas-node/ConnectorMetadata > prod/IS.xml
-	$(MDSL) -t IS -c https://node.island.is/eidas-node/ConnectorMetadata > prod/IS.xml
+	#$(MDSL) -t IS -c https://node.island.is/eidas-node/ConnectorMetadata > prod/IS.xml
 	$(MDSL) -t IS -p https://testnode.island.is/eidas-node/ServiceMetadata -c https://testnode.island.is/eidas-node/ConnectorMetadata > test/IS.xml
 
 IT:
