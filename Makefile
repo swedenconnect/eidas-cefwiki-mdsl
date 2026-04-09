@@ -116,7 +116,7 @@ IS:
 	# Iceland
 	#$(MDSL) -t IS -p https://node.island.is/eidas-node/ServiceMetadata -c https://node.island.is/eidas-node/ConnectorMetadata > prod/IS.xml
 	#$(MDSL) -t IS -c https://node.island.is/eidas-node/ConnectorMetadata > prod/IS.xml
-	$(MDSL) -t IS -p https://testnode.island.is/eidas-node/ServiceMetadata -c https://testnode.island.is/eidas-node/ConnectorMetadata > test/IS.xml
+	$(MDSL) -t IS -p https://is-eidas-proxy-test.audkenni.is/EidasNodeProxy/ServiceMetadata -c https://is-eidas-connector-test.audkenni.is/EidasNodeConnector/ConnectorMetadata > test/IS.xml
 
 IT:
 	# Italy
