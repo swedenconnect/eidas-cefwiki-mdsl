@@ -130,7 +130,7 @@ LI:
 
 LT:
 	# Lithuania
-	$(MDSL) -t LT -p https://peps2.eid.lt/EidasNode/ServiceMetadata -c https://peps2.eid.lt/EidasNode/ConnectorMetadata > prod/LT.xml
+	$(MDSL) -t LT -p https://peps2.eid.lt/EidasNodeProxy/ServiceMetadata -c https://peps2.eid.lt/EidasNodeConnector/ConnectorMetadata > prod/LT.xml
 	$(MDSL) -t LT -p https://testpeps.eid.lt/EidasNodeProxy/ServiceMetadata -c https://testpeps.eid.lt/EidasNodeConnector/ConnectorMetadata  > test/LT.xml
 
 LU:
