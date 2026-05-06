@@ -176,7 +176,7 @@ RO:
 
 SK:
 	# Slovakia
-	$(MDSL) -t SK -p https://eidas.slovensko.sk/EidasNode/ServiceMetadata -c https://eidas.slovensko.sk/EidasNode/ConnectorMetadata > prod/SK.xml
+	$(MDSL) -t SK -p https://eidas.slovensko.sk/EidasNodeProxy/ServiceMetadata -c https://eidas.slovensko.sk/EidasNodeConnector/ConnectorMetadata > prod/SK.xml
 	$(MDSL) -t SK -p https://eidas.upvsfixnew.gov.sk/EidasNodeProxy/ServiceMetadata -c https://eidas.upvsfixnew.gov.sk/EidasNodeConnector/ConnectorMetadata > test/SK.xml
 
 SI:
