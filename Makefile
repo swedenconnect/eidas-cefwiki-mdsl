@@ -9,18 +9,13 @@ all: update
 docker:
 	@docker build -t eidas-cefwiki-mdsl .
 
-update: $(COUNTRIES) prod.xml test.xml certs
+update: $(COUNTRIES) prod.xml test.xml
 
 prod.xml:
 	@./scripts/build-mdsl.sh prod > $@
 test.xml:
 	@./scripts/build-mdsl.sh test > $@
 
-%.crt: %.xml
-	@xsltproc extract-certificates.xsl $< > $@
-
-certs:
-	for c in $(COUNTRIES); do $(MAKE) prod/$$c.crt test/$$c.crt; done
 
 EU:
 	# European Commission
