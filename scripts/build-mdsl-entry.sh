@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-prg=$(basename $0)
-dir=$(dirname $0)
+prg=$(basename "$0")
 territory=""
 connectors=()
 proxy=""
@@ -27,12 +26,16 @@ while getopts 't:c:p:hv' c; do
 		usage
 		exit
 		;;
+	?)
+		usage
+		exit 1
+		;;
 	esac
 done
 
 x=$(mktemp)
 tmpfiles+=("$x")
-cat >$x <<EOF
+cat >"$x" <<EOF
 <?xml version="1.0"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="$territory">
 EOF
@@ -43,20 +46,20 @@ USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15
 for connector in "${connectors[@]}"; do
 	c_xml=$(mktemp)
 	tmpfiles+=("$c_xml")
-	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >>$x
+	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO"$c_xml" "$connector" && echo "<xi:include href=\"$c_xml\"/>" >>"$x"
 done
 
 if [ "x$proxy" != "x" ]; then
 	p_xml=$(mktemp)
 	tmpfiles+=("$p_xml")
-	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >>$x
+	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO"$p_xml" "$proxy" && echo "<xi:include href=\"$p_xml\"/>" >>"$x"
 fi
 
-echo "</ser:MetadataList>" >>$x
+echo "</ser:MetadataList>" >>"$x"
 
 s=$(mktemp)
 tmpfiles+=("$s")
-cat >$s <<EOF
+cat >"$s" <<EOF
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -112,7 +115,7 @@ cat >$s <<EOF
 EOF
 
 if [ "x$proxy" != "x" ]; then
-	cat >>$s <<EOF
+	cat >>"$s" <<EOF
   <xsl:template match="md:EntityDescriptor[@entityID='$proxy']">
      <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/ProxyService</xsl:with-param></xsl:call-template>
   </xsl:template>
@@ -120,19 +123,19 @@ EOF
 fi
 
 for connector in "${connectors[@]}"; do
-	cat >>$s <<EOF
+	cat >>"$s" <<EOF
   <xsl:template match="md:EntityDescriptor[@entityID='$connector']">
      <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/Connector</xsl:with-param></xsl:call-template>
   </xsl:template>
 EOF
 done
 
-cat >>$s <<EOF
+cat >>"$s" <<EOF
   <xsl:template match="@*"><xsl:copy/></xsl:template>
   <xsl:template match="*"></xsl:template>
 </xsl:stylesheet>
 EOF
 
-xsltproc --stringparam hidden $hidden --xinclude $s $x | xmllint --format --nsclean -
+xsltproc --stringparam hidden "$hidden" --xinclude "$s" "$x" | xmllint --format --nsclean -
 
 rm -f "${tmpfiles[@]}"
