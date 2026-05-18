@@ -3,14 +3,15 @@
 prg=`basename $0`
 dir=`dirname $0`
 territory=""
-connector=""
+connectors=()
 proxy=""
 hidden="true"
+tmpfiles=()
 
 usage () {
-   echo "Usage: $prg -t <territory> [-c <connector url>] [-p <proxy url>] [-h] [-v]"
+   echo "Usage: $prg -t <territory> [-c <connector url>]... [-p <proxy url>] [-h] [-v]"
    echo "       -t <territory>: A 2-letter ISO country code"
-   echo "       -c <url>: The connector URL (possibly empty)"
+   echo "       -c <url>: A connector URL (may be repeated for multiple connectors)"
    echo "       -p <url>: The proxy service URL (possibly empty)"
    echo "       -h: Print this text"
    echo "       -v: Make visible - include endpoints in discovery (HideFromDiscovery=\"false\")"
@@ -19,7 +20,7 @@ usage () {
 while getopts 't:c:p:hv' c; do
    case $c in
       t) territory="$OPTARG" ;;
-      c) connector="$OPTARG" ;;
+      c) connectors+=("$OPTARG") ;;
       p) proxy="$OPTARG" ;;
       v) hidden="false" ;;
       h) usage; exit ;;
@@ -27,6 +28,7 @@ while getopts 't:c:p:hv' c; do
 done
 
 x=`mktemp`
+tmpfiles+=("$x")
 cat>$x<<EOF
 <?xml version="1.0"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="$territory">
@@ -35,19 +37,22 @@ EOF
 # Some contries blocks curl and wget
 USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15'
 
-if [ "x$connector" != "x" ]; then
-c_xml=`mktemp`
-wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
-fi
+for connector in "${connectors[@]}"; do
+   c_xml=`mktemp`
+   tmpfiles+=("$c_xml")
+   wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
+done
 
 if [ "x$proxy" != "x" ]; then
 p_xml=`mktemp`
+tmpfiles+=("$p_xml")
 wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >> $x
 fi
 
 echo "</ser:MetadataList>" >> $x
 
 s=`mktemp`
+tmpfiles+=("$s")
 cat>$s<<EOF
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0"
@@ -111,13 +116,13 @@ cat>>$s<<EOF
 EOF
 fi
 
-if [ "x$connector" != "x" ]; then
+for connector in "${connectors[@]}"; do
 cat>>$s<<EOF
   <xsl:template match="md:EntityDescriptor[@entityID='$connector']">
      <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/Connector</xsl:with-param></xsl:call-template>
   </xsl:template>
 EOF
-fi
+done
 
 cat>>$s<<EOF
   <xsl:template match="@*"><xsl:copy/></xsl:template>
@@ -128,4 +133,4 @@ EOF
 xsltproc --stringparam hidden $hidden --xinclude $s $x | xmllint --format --nsclean -
 
 
-rm -f $x $s $c_xml $p_xml
+rm -f "${tmpfiles[@]}"
