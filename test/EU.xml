@@ -75,4 +75,20 @@ PIFE5owCaVOxOF6X7qX5tk2bYtVBESDkOWTHOXLbGRZj/T47idboyuh25tC7ijvhvPtrQNNoQ+Rj
       </ds:X509Data>
     </ds:KeyInfo>
   </ser:MetadataLocation>
+  <ser:MetadataLocation xmlns:shibmeta="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" Location="https://node.test.eidasmw.project-odyssey.eu/EidasNodeConnector/ConnectorMetadata">
+    <ser:Endpoint EndpointType="http://eidas.europa.eu/metadata/ept/Connector" EntityID="https://node.test.eidasmw.project-odyssey.eu/EidasNodeConnector/ConnectorMetadata"/>
+    <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIIByTCCAXCgAwIBAgIUVN4bZ7wojV18pyXUGmcBnSV2KUQwCgYIKoZIzj0EAwIwZDEVMBMGA1UE
+AwwMbWV0YWRhdGFOb2RlMQ0wCwYDVQQLDAROb2RlMRwwGgYDVQQKDBNFdXJvcGVhbiBDb21taXNz
+aW9uMREwDwYDVQQHDAhCcnVzc2VsczELMAkGA1UEBhMCRVUwIBcNMjYwMzI1MTQ0NjM0WhgPMjA3
+NjAzMjUxNDQ2MzRaMGQxFTATBgNVBAMMDG1ldGFkYXRhTm9kZTENMAsGA1UECwwETm9kZTEcMBoG
+A1UECgwTRXVyb3BlYW4gQ29tbWlzc2lvbjERMA8GA1UEBwwIQnJ1c3NlbHMxCzAJBgNVBAYTAkVV
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAENYgC8AQLuBg2ZqVMnPZgrTs2PCTgEcDE0rIBSkVL
+DDb/zeeZtgI4TDAr32znoEYPgDy762ofjK4UTTNLmDQ2BDAKBggqhkjOPQQDAgNHADBEAiBwPImH
+Plwgi1nu/J3YcWW3s0AE3BcPegeIksq6iBpfdQIgGGyM/Jm+igXxY0xv/xbG/L6GOQZcHd/AZZUn
+qgmy7xM=</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+  </ser:MetadataLocation>
 </ser:MetadataList>
