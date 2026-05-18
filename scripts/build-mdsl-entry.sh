@@ -1,35 +1,38 @@
 #!/usr/bin/env bash
 
-prg=`basename $0`
-dir=`dirname $0`
+prg=$(basename $0)
+dir=$(dirname $0)
 territory=""
 connectors=()
 proxy=""
 hidden="true"
 tmpfiles=()
 
-usage () {
-   echo "Usage: $prg -t <territory> [-c <connector url>]... [-p <proxy url>] [-h] [-v]"
-   echo "       -t <territory>: A 2-letter ISO country code"
-   echo "       -c <url>: A connector URL (may be repeated for multiple connectors)"
-   echo "       -p <url>: The proxy service URL (possibly empty)"
-   echo "       -h: Print this text"
-   echo "       -v: Make visible - include endpoints in discovery (HideFromDiscovery=\"false\")"
+usage() {
+	echo "Usage: $prg -t <territory> [-c <connector url>]... [-p <proxy url>] [-h] [-v]"
+	echo "       -t <territory>: A 2-letter ISO country code"
+	echo "       -c <url>: A connector URL (may be repeated for multiple connectors)"
+	echo "       -p <url>: The proxy service URL (possibly empty)"
+	echo "       -h: Print this text"
+	echo "       -v: Make visible - include endpoints in discovery (HideFromDiscovery=\"false\")"
 }
 
 while getopts 't:c:p:hv' c; do
-   case $c in
-      t) territory="$OPTARG" ;;
-      c) connectors+=("$OPTARG") ;;
-      p) proxy="$OPTARG" ;;
-      v) hidden="false" ;;
-      h) usage; exit ;;
-   esac
+	case $c in
+	t) territory="$OPTARG" ;;
+	c) connectors+=("$OPTARG") ;;
+	p) proxy="$OPTARG" ;;
+	v) hidden="false" ;;
+	h)
+		usage
+		exit
+		;;
+	esac
 done
 
-x=`mktemp`
+x=$(mktemp)
 tmpfiles+=("$x")
-cat>$x<<EOF
+cat >$x <<EOF
 <?xml version="1.0"?>
 <ser:MetadataList xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:ser="http://eidas.europa.eu/metadata/servicelist" Territory="$territory">
 EOF
@@ -38,22 +41,22 @@ EOF
 USER_AGENT='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.3 Safari/605.1.15'
 
 for connector in "${connectors[@]}"; do
-   c_xml=`mktemp`
-   tmpfiles+=("$c_xml")
-   wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >> $x
+	c_xml=$(mktemp)
+	tmpfiles+=("$c_xml")
+	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$c_xml $connector && echo "<xi:include href=\"$c_xml\"/>" >>$x
 done
 
 if [ "x$proxy" != "x" ]; then
-p_xml=`mktemp`
-tmpfiles+=("$p_xml")
-wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >> $x
+	p_xml=$(mktemp)
+	tmpfiles+=("$p_xml")
+	wget -U "${USER_AGENT}" --timeout=3 --tries=2 --no-check-certificate -qO$p_xml $proxy && echo "<xi:include href=\"$p_xml\"/>" >>$x
 fi
 
-echo "</ser:MetadataList>" >> $x
+echo "</ser:MetadataList>" >>$x
 
-s=`mktemp`
+s=$(mktemp)
 tmpfiles+=("$s")
-cat>$s<<EOF
+cat >$s <<EOF
 <?xml version="1.0"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -109,7 +112,7 @@ cat>$s<<EOF
 EOF
 
 if [ "x$proxy" != "x" ]; then
-cat>>$s<<EOF
+	cat >>$s <<EOF
   <xsl:template match="md:EntityDescriptor[@entityID='$proxy']">
      <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/ProxyService</xsl:with-param></xsl:call-template>
   </xsl:template>
@@ -117,20 +120,19 @@ EOF
 fi
 
 for connector in "${connectors[@]}"; do
-cat>>$s<<EOF
+	cat >>$s <<EOF
   <xsl:template match="md:EntityDescriptor[@entityID='$connector']">
      <xsl:call-template name="mdl"><xsl:with-param name="type">http://eidas.europa.eu/metadata/ept/Connector</xsl:with-param></xsl:call-template>
   </xsl:template>
 EOF
 done
 
-cat>>$s<<EOF
+cat >>$s <<EOF
   <xsl:template match="@*"><xsl:copy/></xsl:template>
   <xsl:template match="*"></xsl:template>
 </xsl:stylesheet>
 EOF
 
 xsltproc --stringparam hidden $hidden --xinclude $s $x | xmllint --format --nsclean -
-
 
 rm -f "${tmpfiles[@]}"
