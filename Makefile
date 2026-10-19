@@ -81,7 +81,7 @@ FI:
 
 FR:
 	# France
-	$(MDSL) -t FR -p https://eidas.franceconnect.gouv.fr/EidasNode/ServiceMetadata   -c https://eidas.franceconnect.gouv.fr/EidasNode/ConnectorMetadata > prod/FR.xml
+	$(MDSL) -t FR -p https://eidas.franceconnect.gouv.fr/EidasNodeProxy/ServiceMetadata   -c https://eidas.franceconnect.gouv.fr/EidasNodeConnector/ConnectorMetadata > prod/FR.xml
 	$(MDSL) -t FR -p https://eidas-fr.integ01.dev-franceconnect.fr/EidasNodeProxy/ServiceMetadata -c https://eidas.pp.dev-franceconnect.fr/EidasNodeConnector/ConnectorMetadata > test/FR.xml
 
 EL:
